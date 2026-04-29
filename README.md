@@ -1,4 +1,7 @@
 # Zertifizierte Verhaltensanalyse (ZVA+)
+
+<img width="400" height="260" alt="logo-400x260" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
+
 ## Die Inversion des Recruitings: Effizienz statt Zufall
 
 ### Problem
