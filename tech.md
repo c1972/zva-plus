@@ -1,7 +1,6 @@
-=======================================
 © 2026 Christian Knuf. Alle Rechte vorbehalten. - Dieses Dokument sowie der darin enthaltene Programm-Code (System-Prompt) und die geschäftliche Logik sind geistiges Eigentum von Christian Knuf. Die Veröffentlichung auf GitHub dient ausschließlich zu Ansichts- und Prüfzwecken für potenzielle Partner, Arbeitgeber oder wissenschaftliche Institutionen. Jede Vervielfältigung, Verbreitung oder kommerzielle Nutzung – auch in Auszügen oder in modifizierter Form – ist ohne ausdrückliche schriftliche Genehmigung des Urhebers untersagt.
 © 2026 Christian Knuf. All rights reserved. - This document, including the system prompt and business logic contained herein, is the intellectual property of Christian Knuf. Publication on GitHub is intended solely for viewing and evaluation by potential partners, employers, or academic institutions. Any reproduction, distribution, or commercial use—even in part or in modified form—is strictly prohibited without the express written consent of the author.
-=======================================
+
 # Technical Deep Dive
 
 ## Eine detaillierte Line-by-Line Analyse des ZVA+ System-Prompts.
