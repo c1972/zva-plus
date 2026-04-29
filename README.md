@@ -55,3 +55,23 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 **Warum ein 11k-Zeichen Prompt und kein Fine-Tuning?**
 
 > Ein Fine-Tuning macht das Modell starr. Die massive Instruktionslogik ermöglicht es, das Verhalten der KI in Echtzeit zu steuern und auf logische Brüche zu reagieren, ohne die Generalisierungsfähigkeit des zugrunde liegenden LLMs zu verlieren. Es ist **Dynamic Engineering** statt Static Training.
+
+**Warum wird eine dedizierte Hardware-Lösung angestrebt?**
+
+> ZVA+ ist kein SaaS-Produkt (Software as a Service). Im professionellen Recruiting und in der Diagnostik ist Vertraulichkeit das höchste Gut. Öffentliche Cloud-KIs speichern Daten oft zu Trainingszwecken. Eine autarke Hardware-Lösung stellt sicher, dass sensible Analysedaten das Haus des Kunden niemals verlassen. Zudem erlaubt nur eigene Hardware die volle Kontrolle über die Modell-Parameter (Temperature, Top-P), was für die Reproduzierbarkeit der Analyseergebnisse essenziell ist.
+
+**Wie geht das System mit "False Positives" um?**
+
+> Jede KI-gestützte Analyse unterliegt einer gewissen Fehlertoleranz. ZVA+ minimiert diese durch das interne Konsistenz-Monitoring. Widerspricht sich das Modell in seiner Bewertung oder erkennt es logische Lücken in der eigenen Argumentationskette, wird kein Zertifikat ausgestellt, sondern ein Re-Evaluations-Modus aktiviert. Das System ist darauf getrimmt, im Zweifel eher eine Analyse zu verwerfen, als eine ungenaue Zertifizierung zu erteilen.
+
+**Ersetzt ZVA+ den menschlichen Recruiter?**
+
+> Nein. ZVA+ ist ein Vorfilter-Instrument, das die Spreu vom Weizen trennt. Es entlastet Recruiter von der ersten, oft fehleranfälligen Phase der Vorauswahl. Das System liefert eine fundierte, datenbasierte Entscheidungsgrundlage für das persönliche Gespräch. Es ersetzt nicht das menschliche Urteilsvermögen, sondern objektiviert die kognitive Vorqualifikation.
+
+**Was passiert bei einem Verbindungsabbruch während der Datenerhebung?**
+
+> Da ZVA+ auf einer Gesprächslogik basiert, ist der Fortschritt statusabhängig. In der finalen Implementierung wird ein Session-Management implementiert, das den Fortschritt lokal zwischenspeichert. Bei den aktuellen Tests auf öffentlichen Systemen (ChatGPT/Gemini) führt ein Abbruch der Session meist zum Datenverlust, weshalb eine stabile Umgebung für den Test empfohlen wird.
+
+**Wie wird die Objektivität der KI sichergestellt (Bias)?**
+
+> KI-Modelle können Vorurteile aus ihren Trainingsdaten übernehmen. ZVA+ wirkt dem entgegen, indem es sich rein auf logische Konsistenz und argumentative Tiefe konzentriert, statt auf sozio-kulturelle Merkmale. Durch die 11.600 Zeichen Instruktionslogik wird die KI gezwungen, rein analytisch zu agieren und rhetorische Blendgranaten oder biografische "Halo-Effekte" (positive Vorurteile) zu ignorieren.
