@@ -17,3 +17,14 @@ Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu 
 2. Unternehmen zahlen Lizenzgebühren für den Zugang zu einem geprüften, hochqualitativen Kandidatenpool.
 
 So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Glaubwürdigkeit, Arbeitgeber sparen Kosten und Fehlentscheidungen.
+
+### FAQ
+
+**Welche Zertifizierung ist gemeint?**
+Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
+
+**Wie viel Zeit muss ich einplanen?**
+Die Dauer hängt nicht von einer festen Zeit ab, sondern von der Datenerhebung während des Gesprächs. Um eine präzise Analyse zu ermöglichen, führt das System den Nutzer durch etwa 10 bis 20 Gesprächsrunden. Je ausführlicher und substanzieller deine Antworten ausfallen, desto schneller erreicht die KI die notwendige Datendichte für den finalen Report.
+
+**Wo kann ich das ausprobieren?**
+Du kannst das System sofort testen, indem du den Prompt aus dem Repository kopierst und in ein LLM deiner Wahl einfügst. Empfohlen werden Gemini (Google), ChatGPT (OpenAI) oder Claude (Anthropic). Für die höchste Präzision ist die Abo-Version von Claude oder das kostenlose Gemini ideal. Claude ist aktuell am stärksten bei komplexer Logik, in der kostenlosen Version jedoch stark limitiert. ChatGPT funktioniert ohne Anmeldung, bietet im Gratis-Modell jedoch eine geringere Antwortqualität. Den vollständigen Prompt einfügen, absenden und den Anweisungen der KI folgen, bis der Abschluss-Code generiert wird. Datenschutz: Der gesamte Dialog bleibt privat. Es findet keine zentrale Speicherung statt. Der generierte Abschluss-Code ist anonymisiert und enthält lediglich technische Metadaten wie das verwendete Modell und den Umfang der Analyse.
