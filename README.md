@@ -25,7 +25,7 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 
 **Welche Zertifizierung ist gemeint?**
 
-Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
+> Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
 
 **Wie viel Zeit muss ich einplanen?**
 
