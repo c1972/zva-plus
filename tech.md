@@ -1,6 +1,3 @@
-© 2026 Christian Knuf. Alle Rechte vorbehalten. - Dieses Dokument sowie der darin enthaltene Programm-Code (System-Prompt) und die geschäftliche Logik sind geistiges Eigentum von Christian Knuf. Die Veröffentlichung auf GitHub dient ausschließlich zu Ansichts- und Prüfzwecken für potenzielle Partner, Arbeitgeber oder wissenschaftliche Institutionen. Jede Vervielfältigung, Verbreitung oder kommerzielle Nutzung – auch in Auszügen oder in modifizierter Form – ist ohne ausdrückliche schriftliche Genehmigung des Urhebers untersagt.
-© 2026 Christian Knuf. All rights reserved. - This document, including the system prompt and business logic contained herein, is the intellectual property of Christian Knuf. Publication on GitHub is intended solely for viewing and evaluation by potential partners, employers, or academic institutions. Any reproduction, distribution, or commercial use—even in part or in modified form—is strictly prohibited without the express written consent of the author.
-
 # Technical Deep Dive
 
 ## Eine detaillierte Line-by-Line Analyse des ZVA+ System-Prompts.
@@ -281,8 +278,10 @@ Warum genau 80% als Trigger für die Analyse? Tests mit verschiedenen Schwellwer
 - 80–85%: Sweet Spot – genug Daten, keine Ermüdungseffekte
 - 90%+: Diminishing Returns (Resultate werden schlechter), Kandidaten werden unkonzentriert
 
-Interessant: Die bloße Kommunikation des Fortschritts ("Wir sind jetzt bei 40%") führte zu etwa 20% längeren Antworten.
-Kandidaten wollen das Assessment "erfolgreich abschließen" – ein Gamification-Effekt, den ich bewusst nutze.
---
-Interessiert an einer Zusammenarbeit?
-info@webck.de
+Interessant: Die bloße Kommunikation des Fortschritts ("Wir sind jetzt bei 40%") führte zu etwa 20% längeren Antworten. Kandidaten wollen das Assessment "erfolgreich abschließen" – ein Gamification-Effekt, den ich bewusst nutze.
+
+Interessiert an einer Zusammenarbeit? info@webck.de
+
+© 2026 Christian Knuf. Alle Rechte vorbehalten. - Dieses Dokument sowie der darin enthaltene Programm-Code (System-Prompt) und die geschäftliche Logik sind geistiges Eigentum von Christian Knuf. Die Veröffentlichung auf GitHub dient ausschließlich zu Ansichts- und Prüfzwecken für potenzielle Partner, Arbeitgeber oder wissenschaftliche Institutionen. Jede Vervielfältigung, Verbreitung oder kommerzielle Nutzung – auch in Auszügen oder in modifizierter Form – ist ohne ausdrückliche schriftliche Genehmigung des Urhebers untersagt.
+
+© 2026 Christian Knuf. All rights reserved. - This document, including the system prompt and business logic contained herein, is the intellectual property of Christian Knuf. Publication on GitHub is intended solely for viewing and evaluation by potential partners, employers, or academic institutions. Any reproduction, distribution, or commercial use—even in part or in modified form—is strictly prohibited without the express written consent of the author.
