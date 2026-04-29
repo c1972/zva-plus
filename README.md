@@ -48,3 +48,10 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 > #### Hinweis zu Tests auf öffentlichen Systemen:
 > Die Tests auf Plattformen wie ChatGPT oder Gemini dienen lediglich der Demonstration der Logik. Da der Nutzer hier den System-Prompt selbst einfügt, handelt es sich technisch gesehen um eine "offene" Umgebung. Eine vollständige Sicherheit gegen Manipulation der System-Ebene ist bauartbedingt nur auf autarker, lokaler Hardware möglich, bei der System-Logik und Nutzer-Input physisch und softwareseitig getrennt bleiben.
 
+**Ist das nicht nur ein glorifizierter Chatbot?**
+
+> Ein Chatbot will unterhalten oder helfen. ZVA+ will diagnostizieren. Der Unterschied liegt im Monitoring: Das System führt im Hintergrund eine Schatten-Analyse der Argumentationskette und der Konsistenz, während der User vorne nur den Dialog sieht.
+
+**Warum ein 11k-Zeichen Prompt und kein Fine-Tuning?**
+
+> Ein Fine-Tuning macht das Modell starr. Die massive Instruktionslogik ermöglicht es, das Verhalten der KI in Echtzeit zu steuern und auf logische Brüche zu reagieren, ohne die Generalisierungsfähigkeit des zugrunde liegenden LLMs zu verlieren. Es ist **Dynamic Engineering** statt Static Training.
