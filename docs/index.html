@@ -5,89 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZVA+</title>
     <style>
-        :root {
-            --primary-color: #007bff; /* Deine Buttonfarbe */
-            --text-color: #333;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-family: sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            text-align: center;
-            color: var(--text-color);
-            padding: 20px;
+            background-color: #f8f9fa;
         }
 
         .logo {
-            max-width: 120px;
+            max-width: 150px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
-
-        h1 { font-size: 1.5rem; margin-bottom: 30px; }
 
         .button-container {
             display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
+            gap: 20px;
         }
 
         .btn {
-            background-color: var(--primary-color);
+            background-color: #007bff;
             color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1rem;
-            border-radius: 6px;
-            cursor: pointer;
             text-decoration: none;
-            transition: opacity 0.2s;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, background-color 0.2s;
         }
 
-        .btn:hover { opacity: 0.8; }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
 
-        /* Sprach-Umschaltung */
-        .lang-content { display: none; }
-        .active { display: block; }
+        @media (max-width: 400px) {
+            .button-container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <!-- Dein Logo -->
     <img src="logo-200x130.png" alt="Logo" class="logo">
 
-    <!-- Textelemente -->
-    <div id="content-de" class="lang-content active">
-        <h1>ZVA+</h1>
-    </div>
-    <div id="content-en" class="lang-content">
-        <h1>Welcome to the test area of ZVA+.</h1>
-    </div>
-
-    <!-- Buttons -->
+    <!-- Buttons als Links zu den Unterseiten -->
     <div class="button-container">
-        <button class="btn" onclick="setLanguage('de')">DE</button>
-        <button class="btn" onclick="setLanguage('en')">EN</button>
+        <a href="de.html" class="btn">DE</a>
+        <a href="en.html" class="btn">EN</a>
     </div>
-
-    <script>
-        function setLanguage(lang) {
-            // Alle Sprachcontainer verstecken
-            document.querySelectorAll('.lang-content').forEach(el => {
-                el.classList.remove('active');
-            });
-            // Gewünschte Sprache zeigen
-            document.getElementById('content-' + lang).classList.add('active');
-            
-            // Optional: Sprache im HTML-Tag anpassen
-            document.documentElement.lang = lang;
-        }
-    </script>
 
 </body>
 </html>
