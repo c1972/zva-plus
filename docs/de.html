@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>ZVA+ | Demo DE</title>
+    <style>
+        body {
+            background-color: #131313;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .status {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #888;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .required::after {
+            content: " *";
+            color: #dc3545;
+        }
+
+        .footer-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="logo-300x195.png" alt="ZVA+ Logo" class="logo">
+            </a>
+        </nav>
+
+        <h1>Objektives Profil Ihrer persönlichen kognitiven Struktur</h1>
+
+        <div class="card">
+            <h2>System-Prompt kopieren</h2>
+            <p>Klicken Sie auf den Button, um den Prompt inklusive Zeitstempel für die Analyse zu kopieren:</p>
+            <button id="copyBtnEn" class="btn">Prompt kopieren</button>
+            <div id="statusEn" class="status">Status: bereit.</div>
+        </div>
+
+        <div class="card">
+            <h2>Anleitung</h2>
+            <ol>
+                <li>Button klicken, um den Prompt zu kopieren.</li>
+                <li>Öffnen Sie <a href="https://gemini.google.com/" target="_blank">Gemini</a> oder <a href="https://claude.ai/" target="_blank">Claude</a>.</li>
+                <li>Den kopierten Code per <strong>STRG + V</strong> einfügen und absenden.</li>
+                <li>Folgen Sie den Anweisungen der KI (ca. 10-20 Runden), bis Sie den <strong>Abschluss-Code</strong> erhalten.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Feedback</h2>
+            <p>Bitte teilen Sie mir Ihr Feedback und den Abschluss-Code mit.</p>
+            
+            <form action="https://formspree.io/f/DEINE_ID" method="POST" onsubmit="return validateForm()">
+                <label for="name">Name (optional)</label>
+                <input type="text" id="name" name="name">
+
+                <label for="output_code" class="required">Persönlicher Abschluss-Code</label>
+                <input type="text" id="output_code" name="output_code" required maxlength="26" placeholder="Ihr 26-stelliger Code">
+
+                <label for="feedback" class="required">Ihr Feedback</label>
+                <textarea id="feedback" name="feedback" rows="5" required placeholder="Wie treffend ist die Analyse? Gab es Probleme?"></textarea>
+
+                <button type="submit" class="btn" style="background-color: #28a745;">Feedback abschicken</button>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">← Zurück zur Auswahl</a> | 
+            <a href="impressum.html" target="_blank">Impressum</a>
+        </div>
+    </div>
+
+    <script>
+    async function copyPrompt(statusId) {
+        const status = document.getElementById(statusId);
+        try {
+            // Lädt die prompt.txt aus dem gleichen Ordner auf GitHub
+            const response = await fetch('prompt.txt');
+            if (!response.ok) throw new Error('prompt.txt nicht gefunden');
+            let text = await response.text();
+            
+            // Zeitstempel generieren
+            const now = new Date();
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            const dateTimeString = `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+            
+            // Platzhalter im Text ersetzen
+            text = text.replace('__DATETIME__', dateTimeString);
+            
+            // Kopieren
+            await navigator.clipboard.writeText(text);
+            status.textContent = 'Status: Prompt erfolgreich kopiert (' + dateTimeString + ')';
+            status.style.color = "#28a745";
+        } catch (err) {
+            status.textContent = 'Fehler: ' + err.message;
+            status.style.color = "#dc3545";
+        }
+    }
+
+    function validateForm() {
+        const outputCode = document.getElementById('output_code').value;
+        const feedback = document.getElementById('feedback').value;
+        
+        if (outputCode.length !== 26) {
+            alert('Ungültiges Code-Format. Der Code muss 26 Zeichen lang sein.');
+            return false;
+        }
+        
+        const urlPattern = /(https?:\/\/|www\.)/i;
+        if (urlPattern.test(feedback)) {
+            alert('URLs sind im Feedback-Feld aus Sicherheitsgründen nicht erlaubt.');
+            return false;
+        }
+        
+        return true;
+    }
+
+    document.getElementById('copyBtnEn').addEventListener('click', () => copyPrompt('statusEn'));
+    </script>
+</body>
+</html>
