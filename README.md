@@ -68,7 +68,7 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 >
 > Die Akzeptanz des ZVA+-Zertifikats auf der Arbeitgeberseite ist der entscheidende Impuls, um die Nachfrage bei den Bewerbern zu erzeugen. Konkret gehen wir wie folgt vor:
 >
-> Lighthouse-Partner-Programm: In der Markteintrittsphase nutzen wir das etablierte Netzwerk unserer Lead-Investoren, um sofortigen Zugang zu drei bis fünf Lighthouse-Kunden in den relevanten Zielbranchen (z. B. Technologie, Finanzdienstleistungen, gehobener Mittelstand) zu erhalten.
+> Lighthouse-Partner-Programm: In der Markteintrittsphase werden wir das etablierte Netzwerk unserer Lead-Investoren nutzen, um sofortigen Zugang zu drei bis fünf Lighthouse-Kunden in den relevanten Zielbranchen (z. B. Technologie, Finanzdienstleistungen, gehobener Mittelstand) zu erhalten. Das Henne-Ei-Problem ist eine bekannte Herausforderung zweiseitiger Märkte, der B2B-First-Ansatz ist die geplante Strategie zu ihrer Lösung, und die konkrete Umsetzung hängt vom erfolgreichen Seed ab.
 >
 > Sofortige Marktvalidierung: Diese Vorreiter-Unternehmen integrieren das ZVA+-Zertifikat als validierten Qualifikationsnachweis in ihre bestehenden Recruiting-Prozesse. Dadurch wird das Zertifikat im Markt sofort mit realem Wert aufgeladen.
 >
