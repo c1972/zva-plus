@@ -40,9 +40,9 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 <details>
 <summary>Was bedeutet der Abschluss-Code und wofür wird er benötigt?</summary>
 
-> Der 21-stellige Abschluss-Code, den Sie am Ende der Analyse erhalten (z. B. GM-DE-010526-06-de-12), ist ein rein technischer Datensatz. Er dient der Qualitätssicherung und Weiterentwicklung des Projekts. Er enthält keinerlei personenbezogene Daten und erlaubt keinen Rückschluss auf Ihre Identität.
+> Der 21-stellige Abschluss-Code, den Sie am Ende der Analyse erhalten (z. B. GM-DE-010526-06-de-12), ist ein rein technischer Datensatz. Er dient der Qualitätssicherung und Weiterentwicklung des Projekts. Er enthält keine direkt personenbezogenen Daten wie Name, E-Mail oder vollständige Adresse.
 > 
-> Der Code setzt sich aus folgenden, anonymisierten Parametern zusammen:
+> Der Code setzt sich aus folgenden, nicht-personenbezogenen Parametern zusammen:
 > 
 > KI-Modell (GM): Welches Sprachmodell wurde genutzt (z. B. Gemini, Claude).
 > Land (DE): Aus welchem Land (nach ISO-Standard) wurde die Anfrage gestellt, um kulturelle Kontexte zu berücksichtigen.
@@ -190,9 +190,9 @@ This creates an inverted cash flow with dual benefit: applicants gain credibilit
 <details>
 <summary>What does the final code mean and what is it used for?</summary>
 
-> The 21-digit final code you receive at the end of the analysis (e.g., GM-DE-010526-06-de-12) is a purely technical data set. It serves the purpose of quality assurance and further development of the project. It contains no personal data whatsoever and does not allow any conclusions to be drawn about your identity.
+> The 21-digit final code you receive at the end of the analysis (e.g., GM-DE-010526-06-de-12) is a purely technical data set. It serves the purpose of quality assurance and further development of the project. It does not contain any directly personally identifiable information such as name, email address, or full address.
 >
-> The code is composed of the following anonymized parameters:
+> The code is composed of the following non-personal parameters:
 >
 > AI Model (GM): Which language model was used (e.g., Gemini, Claude).
 > Country (DE): From which country (according to ISO standard) the request was made, in order to take cultural contexts into account.
