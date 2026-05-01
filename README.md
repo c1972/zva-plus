@@ -210,6 +210,25 @@ This creates an inverted cash flow with dual benefit: applicants gain credibilit
 </details>
 
 <details>
+<summary>How is the chicken-and-egg problem of the business model solved?</summary>
+
+> (Note: The problem refers to the fact that applicants only pay for a certificate if companies accept it, and companies only pay license fees if there are enough certified applicants available.)
+>
+> We solve this initial challenge of a two-sided market through a targeted "B2B-first" strategy and the strategic leverage of our seed investors.
+>
+> Acceptance of the ZVA+ certificate on the employer side is the decisive impulse to generate demand among applicants. Specifically, we proceed as follows:
+>
+> Lighthouse Partner Program: During the market entry phase, we utilize the established network of our lead investors to gain immediate access to three to five lighthouse customers in relevant target industries (e.g., technology, financial services, upper mid-sized companies).
+>
+> Immediate Market Validation: These pioneering companies integrate the ZVA+ certificate as a validated proof of qualification into their existing recruiting processes. This immediately charges the certificate with real value in the market.
+>
+> Catalyst Effect: As soon as applicants see that the ZVA+ certificate is a recognized career lever with reputable top employers, the "pull effect" is created. Applicant demand then organically leads to the candidate pool becoming attractive for additional licensees.
+>
+> Through this focused start, we break the chicken-and-egg dilemma at the most strategically important point and quickly establish ZVA+ as a new quality standard.
+
+</details>
+
+<details>
 <summary>What certification is being referred to?</summary>
 
 > ZVA+ is currently a technical framework for measuring cognitive consistency. The goal, however, is scientific validation in collaboration with universities and psychology faculties. The target is certification according to DIN SPEC or standards for AI-supported aptitude diagnostics. The required capital is primarily intended to fund this accompanying scientific research and the corresponding standardization process.
