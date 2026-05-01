@@ -2,9 +2,9 @@
 
 <img width="400" height="260" alt="ZVA+ Logo" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
 
-# Zertifizierte Verhaltensanalyse — ZVA+
+# HR-Verhaltensanalyse durch künstliche Intelligenz
 
-**[🇩🇪 Deutsch](#-zertifizierte-verhaltensanalyse-zva) · [🇬🇧 English](#-certified-behavioral-analysis-zva)**
+**[🇩🇪 Deutsch](#-hr-verhaltensanalyse-durch-künstliche-intelligenz) · [🇬🇧 English](#-hr-behavior-analysis-through-artificial-intelligence)**
 
 ---
 
@@ -14,9 +14,7 @@
 
 ---
 
-## 🇩🇪 Zertifizierte Verhaltensanalyse (ZVA+)
-
-**Die Inversion des Recruitings: Effizienz statt Zufall**
+## 🇩🇪 HR-Verhaltensanalyse durch künstliche Intelligenz
 
 ### Problem
 
@@ -147,9 +145,7 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 
 ---
 
-## 🇬🇧 Certified Behavioral Analysis (ZVA+)
-
-**The Inversion of Recruiting: Efficiency Over Chance**
+## 🇬🇧 HR behavior analysis through artificial intelligence
 
 ### Problem
 
