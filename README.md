@@ -40,6 +40,28 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 ### 📋 FAQ — Häufig gestellte Fragen
 
 <details>
+<summary>Was bedeutet der Abschluss-Code und wofür wird er benötigt?</summary>
+
+> Der 21-stellige Abschluss-Code, den Sie am Ende der Analyse erhalten (z. B. GM-DE-010526-06-de-12), ist ein rein technischer Datensatz. Er dient der Qualitätssicherung und Weiterentwicklung des Projekts. Er enthält keinerlei personenbezogene Daten und erlaubt keinen Rückschluss auf Ihre Identität.
+> 
+> Der Code setzt sich aus folgenden, anonymisierten Parametern zusammen:
+> 
+> KI-Modell (GM): Welches Sprachmodell wurde genutzt (z. B. Gemini, Claude).
+> Land (DE): Aus welchem Land (nach ISO-Standard) wurde die Anfrage gestellt, um kulturelle Kontexte zu berücksichtigen.
+> Datum (010526): Der Tag der Analyse (TTMMJJ).
+> Stunde (06): Die ungefähre Uhrzeit (nur volle Stunde), um Lastspitzen zu analysieren.
+> Sprache (de): Die verwendete Sprache (ISO 639-1).
+> Runden (12): Wie viele Gesprächsrunden (Frage-Antwort-Paare) waren nötig, um eine Datenbasis für die Analyse zu erreichen.
+> 
+> Da dieses Projekt darauf abzielt, die Validität von KI-gestütztem kognitivem Profiling zu erforschen, ist der Code für mich als Entwickler essenziell:
+> 
+> Ich analysiere, welches KI-Modell (z. B. Gemini vs. Claude) bei gleicher Gesprächsdauer konsistentere und tiefere Analysen liefert. Die Anzahl der Gesprächsründen (Runden) hilft mir zu verstehen, ob die Fragen des Prompts effizient genug sind, um die kognitive Struktur des Nutzers zu erfassen, oder ob die KI zu viele "leere" Runden dreht. Tritt bei einer Analyse ein technischer Fehler auf, hilft mir der Zeitstempel und der Modell-Identifier, das Problem einzugrenzen.
+> 
+> Indem Sie diesen Code im Feedback-Formular übermitteln, leisten Sie einen wichtigen Beitrag zur Forschung an objektiven, bias-freien KI-Analysesystemen, ohne dabei Ihre Privatsphäre preiszugeben.
+
+</details>
+
+<details>
 <summary>Welche Zertifizierung ist gemeint?</summary>
 
 > Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
