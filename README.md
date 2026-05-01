@@ -56,7 +56,7 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 <details>
 <summary>Wo kann ich das ausprobieren?</summary>
 
-> Du kannst das System sofort testen, indem du den Prompt aus dem Repository kopierst und in ein LLM deiner Wahl einfügst. Empfohlen werden Gemini (Google), ChatGPT (OpenAI) oder Claude (Anthropic). Für die höchste Präzision ist die Abo-Version von Claude oder das kostenlose Gemini ideal. Claude ist aktuell am stärksten bei komplexer Logik, in der kostenlosen Version jedoch stark limitiert. ChatGPT funktioniert ohne Anmeldung, bietet im Gratis-Modell jedoch eine geringere Antwortqualität. Den vollständigen Prompt einfügen, absenden und den Anweisungen der KI folgen, bis der Abschluss-Code generiert wird. Datenschutz: Der gesamte Dialog bleibt privat. Es findet keine zentrale Speicherung statt. Der generierte Abschluss-Code ist anonymisiert und enthält lediglich technische Metadaten wie das verwendete Modell und den Umfang der Analyse.
+> Im Testbereich auf: https://c1972.github.io/zva-plus/de.html
 
 </details>
 
@@ -167,7 +167,7 @@ This creates an inverted cash flow with dual benefit: applicants gain credibilit
 <details>
 <summary>Where can I try this?</summary>
 
-> You can test the system immediately by copying the prompt from the repository and pasting it into an LLM of your choice. Recommended options are Gemini (Google), ChatGPT (OpenAI), or Claude (Anthropic). For the highest precision, the paid version of Claude or the free Gemini is ideal. Claude currently performs best on complex logic but is heavily limited in the free tier. ChatGPT works without registration but offers lower response quality in the free model. Paste the full prompt, submit it, and follow the AI's instructions until the completion code is generated. Privacy: the entire dialogue remains private. No central storage takes place. The generated completion code is anonymized and contains only technical metadata such as the model used and the scope of the analysis.
+> In the test area on: https://c1972.github.io/zva-plus/en.html
 
 </details>
 
