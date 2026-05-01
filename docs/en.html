@@ -163,11 +163,9 @@
             <p>Please share your feedback and the final code with me.</p>
             
             <form action="https://formspree.io/f/xrejgyjj" method="POST" onsubmit="return validateForm()">
-                <label for="name">Name (optional)</label>
-                <input type="text" id="name" name="name">
 
                 <label for="output_code" class="required">Personal Final Code</label>
-                <input type="text" id="output_code" name="output_code" required maxlength="26" placeholder="Your 26-digit code">
+                <input type="text" id="output_code" name="output_code" required maxlength="21" placeholder="Your 21-digit code">
 
                 <label for="feedback" class="required">Your Feedback</label>
                 <textarea id="feedback" name="feedback" rows="5" required placeholder="How accurate was the analysis? Were there any issues?"></textarea>
@@ -218,8 +216,8 @@
         const outputCode = document.getElementById('output_code').value;
         const feedback = document.getElementById('feedback').value;
         
-        if (outputCode.length !== 26) {
-            alert('Invalid code format. The code must be 26 characters long.');
+        if (outputCode.length !== 21) {
+            alert('Invalid code format. The code must be 21 characters long.');
             return false;
         }
         
