@@ -173,6 +173,28 @@ This creates an inverted cash flow with dual benefit: applicants gain credibilit
 ### 📋 FAQ — Frequently Asked Questions
 
 <details>
+<summary>What does the final code mean and what is it used for?</summary>
+
+> The 21-digit final code you receive at the end of the analysis (e.g., GM-DE-010526-06-de-12) is a purely technical data set. It serves the purpose of quality assurance and further development of the project. It contains no personal data whatsoever and does not allow any conclusions to be drawn about your identity.
+> 
+> The code is composed of the following anonymized parameters:
+> 
+> AI Model (GM): Which language model was used (e.g., Gemini, Claude).
+> Country (DE): From which country (according to ISO standard) the request was made, in order to take cultural contexts into account.
+> Date (010526): The day of the analysis (DDMMYY).
+> Hour (06): The approximate time (full hour only), to analyze peak loads.
+> Language (de): The language used (ISO 639-1).
+> Rounds (12): How many conversation rounds (question-answer pairs) were necessary to achieve a data basis for the analysis.
+> 
+> Since this project aims to research the validity of AI-supported cognitive profiling, the code is essential for me as a developer:
+> 
+> I analyze which AI model (e.g., Gemini vs. Claude) delivers more consistent and profound analyses given the same conversation duration. The number of conversation rounds (Rounds) helps me understand whether the prompt's questions are efficient enough to capture the user's cognitive structure, or if the AI is running too many "empty" rounds. If a technical error occurs during an analysis, the timestamp and the model identifier help me narrow down the problem.
+> 
+> By submitting this code in the feedback form, you make an important contribution to research on objective, bias-free AI analysis systems without revealing your privacy.
+
+</details>
+
+<details>
 <summary>What certification is being referred to?</summary>
 
 > ZVA+ is currently a technical framework for measuring cognitive consistency. The goal, however, is scientific validation in collaboration with universities and psychology faculties. The target is certification according to DIN SPEC or standards for AI-supported aptitude diagnostics. The required capital is primarily intended to fund this accompanying scientific research and the corresponding standardization process.
