@@ -60,6 +60,25 @@ So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Gla
 </details>
 
 <details>
+<summary>Wie wird das Henne-Ei-Problem des Geschäftsmodells gelöst?</summary>
+
+> (Hinweis: Das Problem bezieht sich darauf, dass Bewerber nur für ein Zertifikat zahlen, wenn Unternehmen es akzeptieren, und Unternehmen nur Lizenzgebühren zahlen, wenn genügend zertifizierte Bewerber vorhanden sind.)
+>
+> Wir lösen diese anfängliche Herausforderung eines zweiseitigen Marktes durch eine gezielte „B2B-First“-Strategie und den strategischen Hebel unserer Seed-Investoren.
+>
+> Die Akzeptanz des ZVA+-Zertifikats auf der Arbeitgeberseite ist der entscheidende Impuls, um die Nachfrage bei den Bewerbern zu erzeugen. Konkret gehen wir wie folgt vor:
+>
+> Lighthouse-Partner-Programm: In der Markteintrittsphase nutzen wir das etablierte Netzwerk unserer Lead-Investoren, um sofortigen Zugang zu drei bis fünf Lighthouse-Kunden in den relevanten Zielbranchen (z. B. Technologie, Finanzdienstleistungen, gehobener Mittelstand) zu erhalten.
+>
+> Sofortige Marktvalidierung: Diese Vorreiter-Unternehmen integrieren das ZVA+-Zertifikat als validierten Qualifikationsnachweis in ihre bestehenden Recruiting-Prozesse. Dadurch wird das Zertifikat im Markt sofort mit realem Wert aufgeladen.
+>
+> Katalysator-Effekt: Sobald Bewerber sehen, dass das ZVA+-Zertifikat bei namhaften Top-Arbeitgebern ein anerkannter Karriere-Hebel ist, entsteht der „Sog-Effekt“. Die Nachfrage der Bewerber führt dann organisch dazu, dass der Kandidatenpool für weitere Lizenznehmer attraktiv wird.
+>
+> Durch diesen fokussierten Start brechen wir das Henne-Ei-Dilemma an der strategisch wichtigsten Stelle auf und etablieren ZVA+ schnell als neuen Qualitätsstandard.
+
+</details>
+
+<details>
 <summary>Welche Zertifizierung ist gemeint?</summary>
 
 > Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
