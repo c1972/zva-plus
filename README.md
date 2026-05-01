@@ -218,7 +218,7 @@ This creates an inverted cash flow with dual benefit: applicants gain credibilit
 >
 > Acceptance of the ZVA+ certificate on the employer side is the decisive impulse to generate demand among applicants. Specifically, we proceed as follows:
 >
-> Lighthouse Partner Program: During the market entry phase, we utilize the established network of our lead investors to gain immediate access to three to five lighthouse customers in relevant target industries (e.g., technology, financial services, upper mid-sized companies).
+> Lighthouse Partner Program: During the market entry phase, we will leverage the established network of our lead investors to gain immediate access to three to five Lighthouse customers in the relevant target sectors (e.g., technology, financial services, upper mid-market). The B2B-first approach is the planned strategy, and its concrete implementation depends on the success of the seed funding round.
 >
 > Immediate Market Validation: These pioneering companies integrate the ZVA+ certificate as a validated proof of qualification into their existing recruiting processes. This immediately charges the certificate with real value in the market.
 >
