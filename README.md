@@ -33,6 +33,9 @@ Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu 
 
 So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Glaubwürdigkeit, Arbeitgeber sparen Kosten und Fehlentscheidungen.
 
+## Businessplan
+Der vollständige Businessplan ist im [Wiki](https://github.com/c1972/zva-plus/wiki) verfügbar.
+
 ---
 
 ### 📋 FAQ — Häufig gestellte Fragen
@@ -182,6 +185,9 @@ Companies worldwide invest enormous resources to find suitable employees. Yet ev
 2. Companies pay license fees for access to a pre-screened, high-quality candidate pool.
 
 This creates an inverted cash flow with dual benefit: applicants gain credibility, employers save costs and avoid poor hiring decisions.
+
+## Business Plan
+The full business plan is available in the [Wiki](https://github.com/c1972/zva-plus/wiki).
 
 ---
 
