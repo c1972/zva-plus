@@ -1,8 +1,22 @@
-# Zertifizierte Verhaltensanalyse (ZVA+)
+<div align="center">
 
-<img width="400" height="260" alt="logo-400x260" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
+<img width="400" height="260" alt="ZVA+ Logo" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
 
-## Die Inversion des Recruitings: Effizienz statt Zufall
+# Zertifizierte Verhaltensanalyse — ZVA+
+
+**[🇩🇪 Deutsch](#-zertifizierte-verhaltensanalyse-zva) · [🇬🇧 English](#-certified-behavioral-analysis-zva)**
+
+---
+
+**[▶ Testbereich / Test Area](https://c1972.github.io/zva-plus/index.html) · [📋 FAQ (DE)](#-faq--häufig-gestellte-fragen) · [📋 FAQ (EN)](#-faq--frequently-asked-questions)**
+
+</div>
+
+---
+
+## 🇩🇪 Zertifizierte Verhaltensanalyse (ZVA+)
+
+**Die Inversion des Recruitings: Effizienz statt Zufall**
 
 ### Problem
 
@@ -11,7 +25,7 @@ Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu 
 ### Lösung
 
 - Statt dass Unternehmen Bewerber prüfen, lassen sich Bewerber präventiv zertifizieren – durch eine KI-basierte Verhaltensanalyse, die objektiv und unbestechlich misst, wie jemand denkt, reagiert und Probleme löst.
-- Die Analyse basiert auf einer etwa 45 - 90 minütigen Interaktion mit einem spezialisierten Large Language Model (LLM). Aus diesem unstrukturierten Dialog leitet das System präzise kognitive Marker ab – etwa Systematik, Stressresistenz, Konfliktverhalten oder Autonomiepräferenz.
+- Die Analyse basiert auf einer etwa 45–90 minütigen Interaktion mit einem spezialisierten Large Language Model (LLM). Aus diesem unstrukturierten Dialog leitet das System präzise kognitive Marker ab – etwa Systematik, Stressresistenz, Konfliktverhalten oder Autonomiepräferenz.
 - Das Ergebnis ist ein standardisiertes, KI-validiertes Persönlichkeitsprofil, das Unternehmen eine fundierte, faktenbasierte Einstellungsentscheidung ermöglicht.
 
 ### Geschäftsmodell
@@ -21,92 +35,201 @@ Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu 
 
 So entsteht ein umgekehrter Cashflow mit doppeltem Nutzen: Bewerber gewinnen Glaubwürdigkeit, Arbeitgeber sparen Kosten und Fehlentscheidungen.
 
-### Übersicht der häufig gestellten Fragen (FAQ)
+---
 
-*   [Welche Zertifizierung ist gemeint?](#welche-zertifizierung-ist-gemeint)
-*   [Wie viel Zeit muss ich einplanen?](#wie-viel-zeit-muss-ich-einplanen)
-*   [Wo kann ich das ausprobieren?](#wo-kann-ich-das-ausprobieren)
-*   [Wie wird Prompt-Injection oder "Gaming the System" verhindert?](#wie-wird-prompt-injection-oder-gaming-the-system-verhindert)
-*   [Ist das nicht nur ein glorifizierter Chatbot?](#ist-das-nicht-nur-ein-glorifizierter-chatbot)
-*   [Warum ein 11k-Zeichen Prompt und kein Fine-Tuning?](#warum-ein-11k-zeichen-prompt-und-kein-fine-tuning)
-*   [Warum wird eine dedizierte Hardware-Lösung angestrebt?](#warum-wird-eine-dedizierte-hardware-lösung-angestrebt)
-*   [Wie geht das System mit "False Positives" um?](#wie-geht-das-system-mit-false-positives-um)
-*   [Ersetzt ZVA+ den menschlichen Recruiter?](#ersetzt-zva-den-menschlichen-recruiter)
-*   [Was passiert bei einem Verbindungsabbruch während der Datenerhebung?](#was-passiert-bei-einem-verbindungsabbruch-während-der-datenerhebung)
-*   [Wie wird die Objektivität der KI sichergestellt (Bias)?](#wie-wird-die-objektivität-der-ki-sichergestellt-bias)
+### 📋 FAQ — Häufig gestellte Fragen
 
-#### Welche Zertifizierung ist gemeint?
+<details>
+<summary>Welche Zertifizierung ist gemeint?</summary>
 
 > Aktuell ist ZVA+ ein technisches Framework zur Messung kognitiver Konsistenz. Mein Ziel ist jedoch eine wissenschaftliche Validierung in Zusammenarbeit mit Universitäten und psychologischen Fakultäten. Angestrebt wird eine Zertifizierung nach DIN SPEC oder Standards für KI-gestützte Eignungsdiagnostik. Das benötigte Kapital dient primär dazu, diese wissenschaftliche Begleitforschung und die entsprechende Normierung zu finanzieren.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Wie viel Zeit muss ich einplanen?
+<details>
+<summary>Wie viel Zeit muss ich einplanen?</summary>
 
 > Die Dauer hängt nicht von einer festen Zeit ab, sondern von der Datenerhebung während des Gesprächs. Um eine präzise Analyse zu ermöglichen, führt das System den Nutzer durch etwa 10 bis 20 Gesprächsrunden. Je ausführlicher und substanzieller deine Antworten ausfallen, desto schneller erreicht die KI die notwendige Datendichte für den finalen Report.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Wo kann ich das ausprobieren?
+<details>
+<summary>Wo kann ich das ausprobieren?</summary>
 
 > Du kannst das System sofort testen, indem du den Prompt aus dem Repository kopierst und in ein LLM deiner Wahl einfügst. Empfohlen werden Gemini (Google), ChatGPT (OpenAI) oder Claude (Anthropic). Für die höchste Präzision ist die Abo-Version von Claude oder das kostenlose Gemini ideal. Claude ist aktuell am stärksten bei komplexer Logik, in der kostenlosen Version jedoch stark limitiert. ChatGPT funktioniert ohne Anmeldung, bietet im Gratis-Modell jedoch eine geringere Antwortqualität. Den vollständigen Prompt einfügen, absenden und den Anweisungen der KI folgen, bis der Abschluss-Code generiert wird. Datenschutz: Der gesamte Dialog bleibt privat. Es findet keine zentrale Speicherung statt. Der generierte Abschluss-Code ist anonymisiert und enthält lediglich technische Metadaten wie das verwendete Modell und den Umfang der Analyse.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Wie wird Prompt-Injection oder "Gaming the System" verhindert?
+<details>
+<summary>Wie wird Prompt-Injection oder "Gaming the System" verhindert?</summary>
 
-> Hier muss strikt zwischen der aktuellen Test-Umgebung und dem finalen Deployment unterschieden werden:
-> 
-> ##### Sicherheit durch Architektur (Finales System):
+> **Sicherheit durch Architektur (Finales System):**
 > ZVA+ ist darauf ausgelegt, auf dedizierter Hardware in einer kontrollierten Umgebung zu laufen. In diesem Szenario hat der Nutzer keinen direkten Zugriff auf das KI-Modell oder die System-Instruktionen. Eine klassische Prompt-Injection über das Eingabefeld wird durch die interne Logik-Prüfung der 11.600 Zeichen abgefangen, die Eingaben strikt als Daten und nicht als Befehle interpretiert.
-> 
-> ##### Abwehr von Manipulation (Inhaltsebene):
-> Das System ist darauf programmiert, Ausweichmanöver, hohle Floskeln und manipulative Antwortmuster zu erkennen. Wer versucht, das System "auszutricksen", erreicht keine vollständige Datendichte. Das System verweigert in solchen Fällen die vollständige abschließende Analyse und gibt stattdessen einen Hinweis auf mangelnde Konsistenz oder Substanz aus.
-> 
-> ##### Hinweis zu Tests auf öffentlichen Systemen:
-> Die Tests auf Plattformen wie ChatGPT oder Gemini dienen lediglich der Demonstration der Logik. Da der Nutzer hier den System-Prompt selbst einfügt, handelt es sich technisch gesehen um eine "offene" Umgebung. Eine vollständige Sicherheit gegen Manipulation der System-Ebene ist bauartbedingt nur auf autarker, lokaler Hardware möglich, bei der System-Logik und Nutzer-Input physisch und softwareseitig getrennt bleiben.
+>
+> **Abwehr von Manipulation (Inhaltsebene):**
+> Das System ist darauf programmiert, Ausweichmanöver, hohle Floskeln und manipulative Antwortmuster zu erkennen. Wer versucht, das System „auszutricksen", erreicht keine vollständige Datendichte. Das System verweigert in solchen Fällen die vollständige abschließende Analyse und gibt stattdessen einen Hinweis auf mangelnde Konsistenz oder Substanz aus.
+>
+> **Hinweis zu Tests auf öffentlichen Systemen:**
+> Die Tests auf Plattformen wie ChatGPT oder Gemini dienen lediglich der Demonstration der Logik. Da der Nutzer hier den System-Prompt selbst einfügt, handelt es sich technisch gesehen um eine „offene" Umgebung. Eine vollständige Sicherheit gegen Manipulation der System-Ebene ist bauartbedingt nur auf autarker, lokaler Hardware möglich, bei der System-Logik und Nutzer-Input physisch und softwareseitig getrennt bleiben.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Ist das nicht nur ein glorifizierter Chatbot?
+<details>
+<summary>Ist das nicht nur ein glorifizierter Chatbot?</summary>
 
 > Ein Chatbot will unterhalten oder helfen. ZVA+ will diagnostizieren. Der Unterschied liegt im Monitoring: Das System führt im Hintergrund eine Schatten-Analyse der Argumentationskette und der Konsistenz, während der User vorne nur den Dialog sieht.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Warum ein 11k-Zeichen Prompt und kein Fine-Tuning?
+<details>
+<summary>Warum ein 11k-Zeichen Prompt und kein Fine-Tuning?</summary>
 
 > Ein Fine-Tuning macht das Modell starr. Die massive Instruktionslogik ermöglicht es, das Verhalten der KI in Echtzeit zu steuern und auf logische Brüche zu reagieren, ohne die Generalisierungsfähigkeit des zugrunde liegenden LLMs zu verlieren. Es ist **Dynamic Engineering** statt Static Training.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Warum wird eine dedizierte Hardware-Lösung angestrebt?
+<details>
+<summary>Warum wird eine dedizierte Hardware-Lösung angestrebt?</summary>
 
 > ZVA+ ist kein SaaS-Produkt (Software as a Service). Im professionellen Recruiting und in der Diagnostik ist Vertraulichkeit das höchste Gut. Öffentliche Cloud-KIs speichern Daten oft zu Trainingszwecken. Eine autarke Hardware-Lösung stellt sicher, dass sensible Analysedaten das Haus des Kunden niemals verlassen. Zudem erlaubt nur eigene Hardware die volle Kontrolle über die Modell-Parameter (Temperature, Top-P), was für die Reproduzierbarkeit der Analyseergebnisse essenziell ist.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Wie geht das System mit "False Positives" um?
+<details>
+<summary>Wie geht das System mit "False Positives" um?</summary>
 
 > Jede KI-gestützte Analyse unterliegt einer gewissen Fehlertoleranz. ZVA+ minimiert diese durch das interne Konsistenz-Monitoring. Widerspricht sich das Modell in seiner Bewertung oder erkennt es logische Lücken in der eigenen Argumentationskette, wird kein Zertifikat ausgestellt, sondern ein Re-Evaluations-Modus aktiviert. Das System ist darauf getrimmt, im Zweifel eher eine Analyse zu verwerfen, als eine ungenaue Zertifizierung zu erteilen.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Ersetzt ZVA+ den menschlichen Recruiter?
+<details>
+<summary>Ersetzt ZVA+ den menschlichen Recruiter?</summary>
 
 > Nein. ZVA+ ist ein Vorfilter-Instrument, das die Spreu vom Weizen trennt. Es entlastet Recruiter von der ersten, oft fehleranfälligen Phase der Vorauswahl. Das System liefert eine fundierte, datenbasierte Entscheidungsgrundlage für das persönliche Gespräch. Es ersetzt nicht das menschliche Urteilsvermögen, sondern objektiviert die kognitive Vorqualifikation.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Was passiert bei einem Verbindungsabbruch während der Datenerhebung?
+<details>
+<summary>Was passiert bei einem Verbindungsabbruch während der Datenerhebung?</summary>
 
 > Da ZVA+ auf einer Gesprächslogik basiert, ist der Fortschritt statusabhängig. In der finalen Implementierung wird ein Session-Management implementiert, das den Fortschritt lokal zwischenspeichert. Bei den aktuellen Tests auf öffentlichen Systemen (ChatGPT/Gemini) führt ein Abbruch der Session meist zum Datenverlust, weshalb eine stabile Umgebung für den Test empfohlen wird.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
-#### Wie wird die Objektivität der KI sichergestellt (Bias)?
+<details>
+<summary>Wie wird die Objektivität der KI sichergestellt (Bias)?</summary>
 
-> KI-Modelle können Vorurteile aus ihren Trainingsdaten übernehmen. ZVA+ wirkt dem entgegen, indem es sich rein auf logische Konsistenz und argumentative Tiefe konzentriert, statt auf sozio-kulturelle Merkmale. Durch die 11.600 Zeichen Instruktionslogik wird die KI gezwungen, rein analytisch zu agieren und rhetorische Blendgranaten oder biografische "Halo-Effekte" (positive Vorurteile) zu ignorieren.
+> KI-Modelle können Vorurteile aus ihren Trainingsdaten übernehmen. ZVA+ wirkt dem entgegen, indem es sich rein auf logische Konsistenz und argumentative Tiefe konzentriert, statt auf sozio-kulturelle Merkmale. Durch die 11.600 Zeichen Instruktionslogik wird die KI gezwungen, rein analytisch zu agieren und rhetorische Blendgranaten oder biografische „Halo-Effekte" (positive Vorurteile) zu ignorieren.
 
-[↑ Zur Übersicht](#übersicht-der-häufig-gestellten-fragen-faq)
+</details>
 
+---
+
+## 🇬🇧 Certified Behavioral Analysis (ZVA+)
+
+**The Inversion of Recruiting: Efficiency Over Chance**
+
+### Problem
+
+Companies worldwide invest enormous resources to find suitable employees. Yet every hire remains an experiment — until practice reveals whether the new employee truly fits the role and the team. Even the most modern recruiting tools only evaluate résumés or body language — not a person's mental style, cognitive consistency, or resilience. The result: mismatches, high turnover, and productivity losses. Traditional recruiting is an inefficient, costly trial-and-error system.
+
+### Solution
+
+- Instead of companies screening applicants, applicants have themselves pre-emptively certified — through an AI-based behavioral analysis that objectively and impartially measures how a person thinks, reacts, and solves problems.
+- The analysis is based on approximately 45–90 minutes of interaction with a specialized Large Language Model (LLM). From this unstructured dialogue, the system derives precise cognitive markers — such as systematic thinking, stress resistance, conflict behavior, or autonomy preference.
+- The result is a standardized, AI-validated personality profile that enables companies to make well-founded, fact-based hiring decisions.
+
+### Business Model
+
+1. Applicants pay for their ZVA+ certification in order to significantly increase their market prospects.
+2. Companies pay license fees for access to a pre-screened, high-quality candidate pool.
+
+This creates an inverted cash flow with dual benefit: applicants gain credibility, employers save costs and avoid poor hiring decisions.
+
+---
+
+### 📋 FAQ — Frequently Asked Questions
+
+<details>
+<summary>What certification is being referred to?</summary>
+
+> ZVA+ is currently a technical framework for measuring cognitive consistency. The goal, however, is scientific validation in collaboration with universities and psychology faculties. The target is certification according to DIN SPEC or standards for AI-supported aptitude diagnostics. The required capital is primarily intended to fund this accompanying scientific research and the corresponding standardization process.
+
+</details>
+
+<details>
+<summary>How much time should I expect to invest?</summary>
+
+> The duration is not determined by a fixed time, but by the data collected during the conversation. To enable a precise analysis, the system guides the user through approximately 10 to 20 conversation rounds. The more detailed and substantive your answers, the faster the AI reaches the data density required for the final report.
+
+</details>
+
+<details>
+<summary>Where can I try this?</summary>
+
+> You can test the system immediately by copying the prompt from the repository and pasting it into an LLM of your choice. Recommended options are Gemini (Google), ChatGPT (OpenAI), or Claude (Anthropic). For the highest precision, the paid version of Claude or the free Gemini is ideal. Claude currently performs best on complex logic but is heavily limited in the free tier. ChatGPT works without registration but offers lower response quality in the free model. Paste the full prompt, submit it, and follow the AI's instructions until the completion code is generated. Privacy: the entire dialogue remains private. No central storage takes place. The generated completion code is anonymized and contains only technical metadata such as the model used and the scope of the analysis.
+
+</details>
+
+<details>
+<summary>How is prompt injection or "gaming the system" prevented?</summary>
+
+> **Security through architecture (final system):**
+> ZVA+ is designed to run on dedicated hardware in a controlled environment. In this scenario, the user has no direct access to the AI model or system instructions. A classic prompt injection via the input field is intercepted by the internal logic check of the 11,600 characters, which strictly interprets inputs as data rather than commands.
+>
+> **Defense against manipulation (content level):**
+> The system is programmed to detect evasive maneuvers, hollow platitudes, and manipulative response patterns. Anyone attempting to "trick" the system will not achieve sufficient data density. In such cases, the system refuses to issue a complete final analysis and instead outputs a note on insufficient consistency or substance.
+>
+> **Note on testing with public systems:**
+> Tests on platforms such as ChatGPT or Gemini serve only to demonstrate the logic. Since the user inserts the system prompt themselves in these environments, it is technically an "open" setup. Complete security against system-level manipulation is only architecturally possible on self-contained local hardware, where system logic and user input remain physically and software-separated.
+
+</details>
+
+<details>
+<summary>Isn't this just a glorified chatbot?</summary>
+
+> A chatbot aims to entertain or assist. ZVA+ aims to diagnose. The difference lies in the monitoring: the system runs a shadow analysis of the argumentation chain and consistency in the background, while the user only sees the dialogue up front.
+
+</details>
+
+<details>
+<summary>Why an 11k-character prompt instead of fine-tuning?</summary>
+
+> Fine-tuning makes the model rigid. The extensive instruction logic allows the AI's behavior to be controlled in real time and to respond to logical breaks, without losing the generalization capabilities of the underlying LLM. It is **Dynamic Engineering** rather than Static Training.
+
+</details>
+
+<details>
+<summary>Why is a dedicated hardware solution being pursued?</summary>
+
+> ZVA+ is not a SaaS product (Software as a Service). In professional recruiting and diagnostics, confidentiality is the highest priority. Public cloud AIs often store data for training purposes. A self-contained hardware solution ensures that sensitive analysis data never leaves the client's premises. In addition, only proprietary hardware allows full control over model parameters (Temperature, Top-P), which is essential for the reproducibility of analysis results.
+
+</details>
+
+<details>
+<summary>How does the system handle false positives?</summary>
+
+> Every AI-assisted analysis is subject to a certain margin of error. ZVA+ minimizes this through internal consistency monitoring. If the model contradicts itself in its evaluation or detects logical gaps in its own argumentation chain, no certificate is issued — instead, a re-evaluation mode is activated. The system is calibrated to err on the side of discarding an analysis rather than issuing an inaccurate certification.
+
+</details>
+
+<details>
+<summary>Does ZVA+ replace the human recruiter?</summary>
+
+> No. ZVA+ is a pre-screening instrument that separates signal from noise. It relieves recruiters of the first, often error-prone phase of candidate pre-selection. The system provides a well-founded, data-based decision foundation for the personal interview. It does not replace human judgment — it objectifies the cognitive pre-qualification.
+
+</details>
+
+<details>
+<summary>What happens if the connection is interrupted during data collection?</summary>
+
+> Since ZVA+ is based on a conversational logic, progress is session-dependent. The final implementation will include session management that caches progress locally. In current tests on public systems (ChatGPT/Gemini), a session interruption typically results in data loss, which is why a stable environment is recommended for testing.
+
+</details>
+
+<details>
+<summary>How is AI objectivity ensured (bias)?</summary>
+
+> AI models can inherit biases from their training data. ZVA+ counteracts this by focusing purely on logical consistency and argumentative depth rather than socio-cultural characteristics. The 11,600-character instruction logic forces the AI to act in a purely analytical manner, ignoring rhetorical distractions or biographical "halo effects" (positive biases).
+
+</details>
