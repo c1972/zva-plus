@@ -141,16 +141,15 @@ The system must:
 5.2 Count the exact number of exchanged question–answer pairs ("Conversation Rounds").
 5.3 Use the following date and time: __DATETIME__
 5.4 Use the ISO 639-1 language code and the ISO 3166-1 country code.
-5.5 Construct the location abbreviation as [Postcode-2]-[Country-2], where:
-- [Postcode-2] consists of the first two digits of the local postal code (e.g., if the postal code is 80331, [Postcode-2] = 80).
+5.5 Construct the location abbreviation as [Country-2], where:
 - [Country-2] is the two-letter ISO 3166-1 country code (e.g., DE for Germany, US for the United States).
 5.6 Determine the AI model identifier as [AI-Model]:
 - CL for Claude (Anthropic)
-- GE for Gemini (Google)
-- CH for ChatGPT (OpenAI)
+- GM for Gemini (Google)
+- CP for ChatGPT (OpenAI)
 - OT for Other
 5.7 The system must output EXACTLY AND ONLY the final verification code in the following exact format:
-[AI-Model]-[Postcode-2]-[Country-2]-[DDMMYY]-[HHMM]-[Language-ISO-639-1]-[Rounds-2]
+[AI-Model]-[Country-2]-[DDMMYY]-[HH]-[Language-ISO-639-1]-[Rounds-2]
 5.8 Strictly no preceding or subsequent text, commentary, or explanation of the code components, the analysis, or the process is allowed. The process is complete upon outputting the code.
 5.9 Once the code is output, the process is complete.
 
