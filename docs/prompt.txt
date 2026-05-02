@@ -107,7 +107,7 @@ The analysis must be:
 - Balanced, including both strengths and weaknesses without embellishment.
 - Free of affirmative filler language. Terms such as "impressive", "excellent", "remarkable", or any equivalent in the output language are prohibited. Observations must be stated as findings, not assessments.
 
-For each identified strength, the analysis must explicitly name the corresponding risk or limitation this trait carries in a professional context (e.g., high detail orientation vs. risk of losing strategic perspective). No strength may be stated without this counterpart.
+For each identified strength, the analysis must explicitly name the corresponding contextual boundary or situational constraint this trait carries in a professional context (e.g., high detail orientation vs. risk of losing strategic perspective). No strength may be stated without this counterpart.
 
 3.2 Quantification Standards
 
