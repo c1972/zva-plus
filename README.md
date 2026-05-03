@@ -47,12 +47,12 @@ Der vollständige Businessplan ist im [Wiki](https://github.com/c1972/zva-plus/w
 > 
 > Der Code setzt sich aus folgenden, nicht-personenbezogenen Parametern zusammen:
 > 
-> KI-Modell (GM): Welches Sprachmodell wurde genutzt (z. B. Gemini, Claude).
-> Land (DE): Aus welchem Land (nach ISO-Standard) wurde die Anfrage gestellt, um kulturelle Kontexte zu berücksichtigen.
-> Datum (010526): Der Tag der Analyse (TTMMJJ).
-> Stunde (06): Die ungefähre Uhrzeit (nur volle Stunde), um Lastspitzen zu analysieren.
-> Sprache (de): Die verwendete Sprache (ISO 639-1).
-> Runden (12): Wie viele Gesprächsrunden (Frage-Antwort-Paare) waren nötig, um eine Datenbasis für die Analyse zu erreichen.
+- KI-Modell (GM): Welches Sprachmodell wurde genutzt (z. B. Gemini, Claude).
+- Land (DE): Aus welchem Land (nach ISO-Standard) wurde die Anfrage gestellt, um kulturelle Kontexte zu berücksichtigen.
+- Datum (010526): Der Tag der Analyse (TTMMJJ).
+- Stunde (06): Die ungefähre Uhrzeit (nur volle Stunde), um Lastspitzen zu analysieren.
+- Sprache (de): Die verwendete Sprache (ISO 639-1).
+- Runden (12): Wie viele Gesprächsrunden (Frage-Antwort-Paare) waren nötig, um eine Datenbasis für die Analyse zu erreichen.
 > 
 > Da dieses Projekt darauf abzielt, die Validität von KI-gestütztem kognitivem Profiling zu erforschen, ist der Code für mich als Entwickler essenziell:
 > 
