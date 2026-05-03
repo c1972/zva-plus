@@ -2,9 +2,9 @@
 
 <img width="400" height="260" alt="ZVA+ Logo" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
 
-# HR-Verhaltensanalyse durch künstliche Intelligenz
+# HR-Verhaltensanalyse durch LLM
 
-**[🇩🇪 Deutsch](#-hr-verhaltensanalyse-durch-künstliche-intelligenz) · [🇬🇧 English](#-hr-behavior-analysis-through-artificial-intelligence)**
+**[🇩🇪 Deutsch](#-hr-verhaltensanalyse-durch-llm) · [🇬🇧 English](#-hr-behavior-analysis-through-llm)**
 
 ---
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🇩🇪 HR-Verhaltensanalyse durch künstliche Intelligenz
+## 🇩🇪 HR-Verhaltensanalyse durch LLM
 
 ### Problem
 
@@ -167,7 +167,7 @@ Der vollständige Businessplan ist im [Wiki](https://github.com/c1972/zva-plus/w
 
 ---
 
-## 🇬🇧 HR behavior analysis through artificial intelligence
+## 🇬🇧 HR behavior analysis through LLM
 
 ### Problem
 
