@@ -16,7 +16,7 @@
 
 ## 🇩🇪 HR-Verhaltensanalyse durch LLM
 
-Lies meinen [Artikel zum Thema Prompt-Engineering](https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d?postPublishedType=repub), am Beispiel dieses Prekts hier, auf medium.com.
+Lies meinen [Artikel zum Thema Prompt-Engineering](https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d?postPublishedType=repub), am Beispiel dieses Projekts hier, auf medium.com.
 
 ### Problem
 
