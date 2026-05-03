@@ -18,7 +18,7 @@
 
 ### Problem
 
-Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu finden. Doch jede Einstellung bleibt ein Versuch – bis sich in der Praxis zeigt, ob der neue Mitarbeiter wirklich zur Aufgabe und zum Team passt. Selbst modernste Recruiting-Tools prüfen nur Lebensläufe oder Körpersprache – nicht den mentalen Stil, die kognitive Konsistenz oder die Belastbarkeit einer Person. Das Resultat: Fehlbesetzungen, hohe Fluktuation und Produktivitätsverluste. Herkömmliches Recruiting ist ein ineffizientes, teures Trial-and-Error-System.
+Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu finden. Doch jede Einstellung bleibt ein Versuch – bis sich in der Praxis zeigt, ob der neue Mitarbeiter wirklich zur Aufgabe und zum Team passt. Selbst modernste Recruiting-Tools prüfen nur Lebensläufe oder Körpersprache – nicht den mentalen Stil, die kognitive Konsistenz oder die Belastbarkeit einer Person. Das Resultat: Fehlbesetzungen, hohe Fluktuation und Produktivitätsverluste. Herkömmliches Recruiting ist ineffizient und teuer.
 
 ### Lösung
 
@@ -171,7 +171,7 @@ Der vollständige Businessplan ist im [Wiki](https://github.com/c1972/zva-plus/w
 
 ### Problem
 
-Companies worldwide invest enormous resources to find suitable employees. Yet every hire remains an experiment — until practice reveals whether the new employee truly fits the role and the team. Even the most modern recruiting tools only evaluate résumés or body language — not a person's mental style, cognitive consistency, or resilience. The result: mismatches, high turnover, and productivity losses. Traditional recruiting is an inefficient, costly trial-and-error system.
+Companies worldwide invest enormous resources to find suitable employees. Yet every hire remains an experiment — until practice reveals whether the new employee truly fits the role and the team. Even the most modern recruiting tools only evaluate résumés or body language — not a person's mental style, cognitive consistency, or resilience. The result: mismatches, high turnover, and productivity losses. Traditional recruiting is inefficient and costly.
 
 ### Solution
 
