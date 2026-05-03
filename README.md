@@ -200,12 +200,12 @@ The full business plan is available in the [Wiki](https://github.com/c1972/zva-p
 >
 > The code is composed of the following non-personal parameters:
 >
-> AI Model (GM): Which language model was used (e.g., Gemini, Claude).
-> Country (DE): From which country (according to ISO standard) the request was made, in order to take cultural contexts into account.
-> Date (010526): The day of the analysis (DDMMYY).
-> Hour (06): The approximate time (full hour only), to analyze peak loads.
-> Language (de): The language used (ISO 639-1).
-> Rounds (12): How many conversation rounds (question-answer pairs) were necessary to achieve a data basis for the analysis.
+- AI Model (GM): Which language model was used (e.g., Gemini, Claude).
+- Country (DE): From which country (according to ISO standard) the request was made, in order to take cultural contexts into account.
+- Date (010526): The day of the analysis (DDMMYY).
+- Hour (06): The approximate time (full hour only), to analyze peak loads.
+- Language (de): The language used (ISO 639-1).
+- Rounds (12): How many conversation rounds (question-answer pairs) were necessary to achieve a data basis for the analysis.
 >
 > Since this project aims to research the validity of AI-supported cognitive profiling, the code is essential for me as a developer:
 >
