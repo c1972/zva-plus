@@ -16,6 +16,8 @@
 
 ## 🇩🇪 HR-Verhaltensanalyse durch LLM
 
+Lies meinen [Artikel zum Thema Prompt-Engineering](https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d?postPublishedType=repub), am Beispiel dieses Prekts hier, auf medium.com.
+
 ### Problem
 
 Weltweit investieren Unternehmen enorme Ressourcen, um geeignete Mitarbeiter zu finden. Doch jede Einstellung bleibt ein Versuch – bis sich in der Praxis zeigt, ob der neue Mitarbeiter wirklich zur Aufgabe und zum Team passt. Selbst modernste Recruiting-Tools prüfen nur Lebensläufe oder Körpersprache – nicht den mentalen Stil, die kognitive Konsistenz oder die Belastbarkeit einer Person. Das Resultat: Fehlbesetzungen, hohe Fluktuation und Produktivitätsverluste. Herkömmliches Recruiting ist ineffizient und teuer.
