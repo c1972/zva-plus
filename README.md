@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="800" height="420" alt="ZVA+ Logo" src="https://github.com/c1972/zva-plus/blob/main/docs/og-image-small.png" />
+<img width="800" height="420" alt="Logo" src="https://github.com/c1972/zva-plus/blob/main/docs/og-image-small.png" />
 
 # KI-Verhaltensanalyse - Denkstil & Job-Fit kostenlos testen
 
@@ -168,6 +168,8 @@ Der vollständige Businessplan ist im [Wiki](https://github.com/c1972/zva-plus/w
 </details>
 
 ---
+
+<img width="800" height="420" alt="Logo" src="https://github.com/c1972/zva-plus/blob/main/docs/og-image-en-small.png" />
 
 ## 🇬🇧 HR behavior analysis through LLM
 
