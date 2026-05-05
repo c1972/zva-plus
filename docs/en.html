@@ -13,195 +13,34 @@
     <meta property="og:title" content="AI Behavioural Analysis – Test Your Thinking Style & Job Fit for Free">
     <meta property="og:description" content="In 15–20 minutes of AI dialogue, discover how you argue, make decisions and which career profiles match your thinking style.">
     <meta property="og:image" content="https://c1972.github.io/zva-plus/og-image-en.png">
-    <style>
-        body {
-            background-color: #131313;
-            color: #e0e0e0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-        }
-
-        .navbar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-        }
-
-        .logo {
-            max-width: 150px;
-            height: auto;
-        }
-
-        h1 {
-            font-size: 1.4rem;
-            text-align: center;
-            color: #ffffff;
-            margin-bottom: 40px;
-        }
-
-        .card {
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-
-        h2 {
-            font-size: 1.2rem;
-            color: #007bff;
-            margin-top: 0;
-        }
-
-        .btn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            width: 100%;
-            font-size: 1.1rem;
-            transition: background 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        .status {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            text-align: center;
-            color: #888;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            margin-bottom: 20px;
-            background: #2a2a2a;
-            border: 1px solid #444;
-            color: #fff;
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
-
-        label {
-            font-size: 0.9rem;
-            font-weight: bold;
-            display: block;
-        }
-
-        .required::after {
-            content: " *";
-            color: #dc3545;
-        }
-
-        .footer-links {
-            margin-top: 40px;
-            padding-top: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        .medium {
-            margin-top: 0px;
-            margin-bottom: 30px;
-            padding-top: 0px;
-            text-align: center;
-            font-size: 1.0rem;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ol, ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        /* FAQ Accordion */
-        .faq-item {
-            border-bottom: 1px solid #2a2a2a;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-item summary {
-            list-style: none;
-            cursor: pointer;
-            padding: 14px 0;
-            font-weight: bold;
-            color: #e0e0e0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            user-select: none;
-        }
-
-        .faq-item summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-item summary::after {
-            content: '+';
-            color: #007bff;
-            font-size: 1.3rem;
-            font-weight: 300;
-            flex-shrink: 0;
-            margin-left: 12px;
-        }
-
-        .faq-item[open] summary::after {
-            content: '−';
-        }
-
-        .faq-item summary:hover {
-            color: #007bff;
-        }
-
-        .faq-answer {
-            padding-bottom: 14px;
-            color: #aaaaaa;
-            font-size: 0.95rem;
-        }
-
-        .faq-answer p {
-            margin: 0 0 8px 0;
-        }
-
-        .faq-answer p:last-child {
-            margin-bottom: 0;
-        }
-    </style>
+	<link rel="stylesheet" href="https://c1972.github.io/zva-plus/style.css">
 </head>
 <body>
+
+    <!-- Top Navigation Bar -->
+    <nav id="topnav">
+        <ul>
+            <li class="nav-dropdown">
+                <button class="nav-item" onclick="toggleDropdown(this)">
+                    Sprache <span class="nav-arrow">▼</span>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="de.html" class="active">🇩🇪 Deutsch</a>
+                    <a href="en.html">🇬🇧 English</a>
+                </div>
+            </li>
+        </ul>
+        <button id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="nav-mobile-menu">
+        <div class="mobile-section-label">Sprache</div>
+        <a href="de.html" class="active">🇩🇪 Deutsch</a>
+        <a href="en.html">🇬🇧 English</a>
+    </div>
 
     <div class="container">
         <nav class="navbar"><a href="index.html"><h1>AI Behavioural Analysis<br>Test Your Thinking Style &amp; Job Fit for Free</h1></a></nav>
