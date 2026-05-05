@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="400" height="260" alt="ZVA+ Logo" src="https://github.com/user-attachments/assets/1c38abc0-886f-4571-9dec-b9a1c9f26f04" />
+<img width="800" height="420" alt="ZVA+ Logo" src="https://github.com/c1972/zva-plus/blob/main/docs/og-image-small.png" />
 
-# HR-Verhaltensanalyse durch LLM
+# KI-Verhaltensanalyse - Denkstil & Job-Fit kostenlos testen
 
 **[🇩🇪 Deutsch](#-hr-verhaltensanalyse-durch-llm) · [🇬🇧 English](#-hr-behavior-analysis-through-llm)**
 
