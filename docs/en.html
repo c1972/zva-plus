@@ -37,9 +37,9 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="nav-mobile-menu">
-        <div class="mobile-section-label">Sprache</div>
-        <a href="de.html" class="active">🇩🇪 Deutsch</a>
-        <a href="en.html">🇬🇧 English</a>
+        <div class="mobile-section-label">Language</div>
+        <a href="de.html">🇩🇪 Deutsch</a>
+        <a href="en.html" class="active">🇬🇧 English</a>
     </div>
 
     <div class="container">
@@ -238,6 +238,28 @@
     }
 
     document.getElementById('copyBtnEn').addEventListener('click', () => copyPrompt('statusEn'));
+    </script>
+
+    <script>
+    function toggleDropdown(btn) {
+        const li = btn.closest('.nav-dropdown');
+        const isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) li.classList.add('open');
+    }
+
+    function toggleMobileMenu() {
+        document.getElementById('nav-mobile-menu').classList.toggle('open');
+    }
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#topnav')) {
+            document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        }
+        if (!e.target.closest('#topnav') && !e.target.closest('#nav-mobile-menu')) {
+            document.getElementById('nav-mobile-menu').classList.remove('open');
+        }
+    });
     </script>
 </body>
 </html>
