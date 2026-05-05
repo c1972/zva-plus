@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>ZVA+ | Demo EN</title>
+    <title>AI Behavioural Analysis – Test Your Thinking Style & Job Fit for Free</title>
+    <meta name="description" content="In 15–20 minutes of AI dialogue, discover how you argue, make decisions and which career profiles match your thinking style. Free, anonymous, browser-based.">
+    <link rel="canonical" href="https://c1972.github.io/zva-plus/en.html">
+    <link rel="alternate" hreflang="de" href="https://c1972.github.io/zva-plus/de.html">
+    <link rel="alternate" hreflang="en" href="https://c1972.github.io/zva-plus/en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://c1972.github.io/zva-plus/en.html">
+    <meta property="og:title" content="AI Behavioural Analysis – Test Your Thinking Style & Job Fit for Free">
+    <meta property="og:description" content="In 15–20 minutes of AI dialogue, discover how you argue, make decisions and which career profiles match your thinking style.">
+    <meta property="og:image" content="https://c1972.github.io/zva-plus/og-image.png">
     <style>
         body {
             background-color: #131313;
@@ -27,8 +35,8 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
         }
 
         .logo {
@@ -111,6 +119,14 @@
             font-size: 0.9rem;
         }
 
+        .medium {
+            margin-top: 0px;
+            margin-bottom: 30px;
+            padding-top: 0px;
+            text-align: center;
+            font-size: 1.0rem;
+        }
+
         a {
             color: #007bff;
             text-decoration: none;
@@ -127,46 +143,200 @@
         li {
             margin-bottom: 12px;
         }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 14px 0;
+            font-weight: bold;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            color: #007bff;
+            font-size: 1.3rem;
+            font-weight: 300;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+
+        .faq-item summary:hover {
+            color: #007bff;
+        }
+
+        .faq-answer {
+            padding-bottom: 14px;
+            color: #aaaaaa;
+            font-size: 0.95rem;
+        }
+
+        .faq-answer p {
+            margin: 0 0 8px 0;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <nav class="navbar">
-            <a href="index.html">
-                <img src="logo-200x130.png" alt="ZVA+ Logo" class="logo">
-            </a>
-        </nav>
+        <nav class="navbar"><a href="index.html"><h1>AI Behavioural Analysis<br>Test Your Thinking Style &amp; Job Fit for Free</h1></a></nav>
 
         <div class="card">
-            <h2>Copy System Prompt</h2>
-            <p>Click the button to copy the prompt for analysis:</p>
+            <p>In 15–20 minutes of AI dialogue, discover how you argue, make decisions and which career profiles match your thinking style. Free, anonymous, browser-based.</p>
+            <p>(<strong>Optimised for desktop</strong> – the analysis requires longer text input.)</p>
+        </div>
+
+        <div class="card">
             <button id="copyBtnEn" class="btn">Copy Prompt</button>
             <div id="statusEn" class="status">Status: ready.</div>
-            <p><strong>Optimized for desktop use</strong> – the analysis requires longer text inputs.</p>
         </div>
+
+        <div class="medium">Read my <a href="https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d" target="_blank">article on prompt engineering</a>, using this project as an example, on medium.com.</div>
 
         <div class="card">
             <h2>Instructions</h2>
             <ol>
                 <li>Click the button to copy the prompt.</li>
-                <li>Open <a href="https://claude.ai/" target="_blank">Claude</a>, <a href="https://gemini.google.com/" target="_blank">Gemini</a>, or <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>. If possible, use a subscription model, ideally Claude.</li>
-                <li>Paste the copied code using <strong>Ctrl + V</strong> and submit.</li>
-                <li>Follow the AI's instructions (approximately 10-20 rounds) until you receive the <strong>completion code</strong>.</li>
-                <li>The system evaluates argumentative depth, not speed. Plan for at least 15 minutes.</li>
-                <li>Consider the limitations and differences of the LLM models: Claude will challenge you intellectually more than Gemini, ChatGPT tends to require more rounds.</li>
-                <li></li>Note that a prompt may <strong>NOT</strong> be executed if you provide it as a file upload. For example, Claude will refuse to do so. (Simply use Ctrl+V instead.)</li>
+                <li>Open <a href="https://claude.ai/" target="_blank">Claude</a>, <a href="https://gemini.google.com/" target="_blank">Gemini</a> or <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>. Use a subscription model if possible – Claude is recommended.</li>
+                <li>Paste the copied prompt with <strong>CTRL + V</strong> and send it.</li>
+                <li>Follow the AI's instructions until you receive the <strong>completion code</strong>.</li>
+                <li>Note that a prompt may <strong>NOT</strong> be executed if you provide it as a file upload. For example, Claude will refuse in that case. Use <strong>CTRL + V</strong> instead.</li>
             </ol>
         </div>
 
         <div class="card">
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>What is this test about?</summary>
+                <div class="faq-answer">
+                    <p>The system conducts a structured dialogue with you and analyses how you argue, make decisions and respond to contradictions. It evaluates cognitive markers such as argumentative consistency, thinking style and stress resilience – not factual knowledge or speed.</p>
+                    <p>At the end you receive a personal profile indicating which career profiles match your thinking style.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Who is this test for?</summary>
+                <div class="faq-answer">
+                    <p>For anyone who wants to better understand themselves – whether in a job application context, at a career crossroads, or simply out of curiosity. No prior knowledge is required; the test is equally suitable for career starters and experienced professionals.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do I need to answer honestly?</summary>
+                <div class="faq-answer">
+                    <p>Answering tactically does not work reliably. The system monitors the consistency of your argumentative chain across all rounds in the background. Anyone who evades, stays superficial or answers contradictorily will not reach sufficient data density – the system will then withhold the final analysis and flag the issue.</p>
+                    <p>The result is only as precise as the substance of your answers.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I read my result later, or is it gone when I close the window?</summary>
+                <div class="faq-answer">
+                    <p>The result appears at the end of the dialogue directly in the chat window of the AI service. It is not saved automatically – once you close the window or the session ends, it is gone.</p>
+                    <p>Recommendation: copy the result into a text document or take a screenshot before closing.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What happens if the dialogue breaks off or I stop midway?</summary>
+                <div class="faq-answer">
+                    <p>There is no progress saving. If the session is interrupted or the connection drops, the conversation history is lost and the test would need to be started from scratch.</p>
+                    <p>Only start the test when you have 15–20 uninterrupted minutes available.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How long does the test take?</summary>
+                <div class="faq-answer">
+                    <p>Allow at least 15 minutes. The duration does not depend on a fixed time, but on when the system has collected sufficient data – typically after 10 to 20 conversation rounds.</p>
+                    <p>The more substantive your answers, the sooner the required data density is reached.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Which AI model should I use?</summary>
+                <div class="faq-answer">
+                    <p>Claude, Gemini and ChatGPT are all supported. Results vary by model:</p>
+                    <p><strong>Claude</strong> delivers the most precise analyses and is the most intellectually demanding – a subscription is recommended, as the free version is heavily limited.<br>
+                    <strong>Gemini</strong> (free) is a solid alternative with good quality.<br>
+                    <strong>ChatGPT</strong> works without registration but tends to require more rounds for a complete result.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What is the completion code?</summary>
+                <div class="faq-answer">
+                    <p>At the end of the test the AI generates a 21-character code. This code contains anonymised technical metadata: the model used, the analysis density reached, the timestamp and the country of origin.</p>
+                    <p>The code contains no personal data and is used solely for quality assurance. You can submit it together with your feedback via the form on this page.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is the result scientifically validated?</summary>
+                <div class="faq-answer">
+                    <p>No – not yet. The system is in development and testing. The underlying methodology is plausible and theoretically grounded, but formal scientific validation (e.g. through independent studies or recognised standards) has not yet taken place.</p>
+                    <p>The result should be understood as an orientating prompt for reflection, not as a certified assessment.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What data is collected?</summary>
+                <div class="faq-answer">
+                    <p>For quality assurance purposes, the country of origin is determined via IP and encoded in the completion code. No further data is stored by this website.</p>
+                    <p>The dialogue itself takes place exclusively in your browser with the AI service you have chosen. What you enter there is subject to the privacy policy of the respective provider (Claude, Gemini, ChatGPT) – not this website.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I retake the test?</summary>
+                <div class="faq-answer">
+                    <p>Yes. There is no restriction on retakes. Bear in mind that a second run with the same model will produce similar results if you answer similarly – the system responds to your actual answering behaviour, not to the point in time.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Which language should I use?</summary>
+                <div class="faq-answer">
+                    <p>The language you express yourself most naturally in. The system adapts accordingly. Answering in English produces an English analysis; answering in German produces a German one. Mixed language is possible but may slightly affect the consistency evaluation.</p>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="card">
             <h2>Feedback</h2>
-            <p>Please share your feedback and the final code with me.</p>
-            
+            <p>Please share your feedback and completion code with me.</p>
+
             <form action="https://formspree.io/f/xrejgyjj" method="POST" onsubmit="return validateForm()">
 
-                <label for="output_code" class="required">Personal Final Code</label>
-                <input type="text" id="output_code" name="output_code" required maxlength="21" placeholder="Your 21-digit code">
+                <label for="output_code" class="required">Personal Completion Code</label>
+                <input type="text" id="output_code" name="output_code" required maxlength="21" placeholder="Your 21-character code">
 
                 <label for="feedback" class="required">Your Feedback</label>
                 <textarea id="feedback" name="feedback" rows="5" required placeholder="How accurate was the analysis? Were there any issues?"></textarea>
@@ -176,7 +346,8 @@
         </div>
 
         <div class="footer-links">
-            <a href="index.html">← Start</a>
+            <a href="index.html">← Start</a><br>For quality assurance, the country of origin is determined via IP and encoded in the completion code.
+            <br>No further data is stored.<br>Legal notice: Christian Knuf · Gertrudenstraße 31 · 46397 Bocholt · github [at] webck.de
         </div>
     </div>
 
@@ -184,12 +355,10 @@
     async function copyPrompt(statusId) {
         const status = document.getElementById(statusId);
         try {
-            // Loads prompt.txt from the same folder on GitHub
             const response = await fetch('prompt.txt');
             if (!response.ok) throw new Error('prompt.txt not found');
             let text = await response.text();
-            
-            // Generate timestamp
+
             const now = new Date();
             const day = String(now.getDate()).padStart(2, '0');
             const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -197,15 +366,13 @@
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
-            
+
             const dateTimeString = `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
-            
-            // Replace placeholder in text
+
             text = text.replace('__DATETIME__', dateTimeString);
-            
-            // Copy
+
             await navigator.clipboard.writeText(text);
-            status.textContent = 'Status: Prompt successfully copied (' + dateTimeString + ')';
+            status.textContent = 'Status: Prompt copied successfully (' + dateTimeString + ')';
             status.style.color = "#28a745";
         } catch (err) {
             status.textContent = 'Error: ' + err.message;
@@ -216,18 +383,18 @@
     function validateForm() {
         const outputCode = document.getElementById('output_code').value;
         const feedback = document.getElementById('feedback').value;
-        
+
         if (outputCode.length !== 21) {
-            alert('Invalid code format. The code must be 21 characters long.');
+            alert('Invalid code format. The code must be exactly 21 characters long.');
             return false;
         }
-        
+
         const urlPattern = /(https?:\/\/|www\.)/i;
         if (urlPattern.test(feedback)) {
             alert('URLs are not allowed in the feedback field for security reasons.');
             return false;
         }
-        
+
         return true;
     }
 
