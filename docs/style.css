@@ -166,13 +166,12 @@
         }
 
         /* ── page title (ex-.navbar) ── */
-        .navbar {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-        }
+        .navbar a {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			text-decoration: none;
+		}
 
         .logo {
             max-width: 150px;
