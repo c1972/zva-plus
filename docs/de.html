@@ -21,6 +21,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            padding-top: calc(48px + 20px);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -31,6 +32,156 @@
             width: 100%;
         }
 
+        /* ── Top Navigation Bar ── */
+        #topnav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 48px;
+            background-color: #1c1c1c;
+            border-bottom: 1px solid #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 0 20px;
+        }
+
+        #topnav ul {
+            list-style: none;
+            margin: 0; padding: 0;
+            display: flex;
+        }
+
+        #topnav li {
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        #topnav li > button.nav-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 0 16px;
+            height: 48px;
+            color: #cccccc;
+            font-size: 0.9rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            transition: color 0.15s;
+            white-space: nowrap;
+        }
+
+        #topnav li > button.nav-item:hover { color: #ffffff; }
+
+        .nav-arrow {
+            font-size: 0.65rem;
+            opacity: 0.7;
+            transition: transform 0.2s;
+        }
+
+        .nav-dropdown.open .nav-arrow { transform: rotate(180deg); }
+
+        .nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1c1c1c;
+            border: 1px solid #2a2a2a;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            min-width: 120px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+        }
+
+        .nav-dropdown.open .nav-dropdown-menu { display: block; }
+
+        .nav-dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #cccccc;
+            font-size: 0.9rem;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .nav-dropdown-menu a:hover {
+            background: #252525;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-dropdown-menu a.active { color: #007bff; }
+
+        /* Hamburger */
+        #nav-hamburger {
+            display: none;
+            position: absolute;
+            right: 16px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #nav-hamburger span {
+            display: block;
+            width: 22px; height: 2px;
+            background: #cccccc;
+            border-radius: 2px;
+            transition: background 0.15s;
+        }
+
+        #nav-hamburger:hover span { background: #ffffff; }
+
+        #nav-mobile-menu {
+            display: none;
+            position: fixed;
+            top: 48px; left: 0; right: 0;
+            background: #1c1c1c;
+            border-bottom: 1px solid #2a2a2a;
+            z-index: 999;
+            padding: 8px 0;
+        }
+
+        #nav-mobile-menu.open { display: block; }
+
+        .mobile-section-label {
+            padding: 8px 20px 4px;
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        #nav-mobile-menu a {
+            display: block;
+            padding: 10px 32px;
+            color: #cccccc;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        #nav-mobile-menu a:hover {
+            color: #ffffff;
+            background: #252525;
+            text-decoration: none;
+        }
+
+        #nav-mobile-menu a.active { color: #007bff; }
+
+        @media (max-width: 600px) {
+            #topnav ul { display: none; }
+            #nav-hamburger { display: flex; }
+        }
+
+        /* ── page title (ex-.navbar) ── */
         .navbar {
             width: 100%;
             display: flex;
@@ -202,6 +353,31 @@
     </style>
 </head>
 <body>
+
+    <!-- Top Navigation Bar -->
+    <nav id="topnav">
+        <ul>
+            <li class="nav-dropdown">
+                <button class="nav-item" onclick="toggleDropdown(this)">
+                    Sprache <span class="nav-arrow">▼</span>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="de.html" class="active">🇩🇪 Deutsch</a>
+                    <a href="en.html">🇬🇧 English</a>
+                </div>
+            </li>
+        </ul>
+        <button id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="nav-mobile-menu">
+        <div class="mobile-section-label">Sprache</div>
+        <a href="de.html" class="active">🇩🇪 Deutsch</a>
+        <a href="en.html">🇬🇧 English</a>
+    </div>
 
     <div class="container">
         <nav class="navbar"><a href="index.html"><h1>KI-Verhaltensanalyse<br>Denkstil & Job-Fit kostenlos testen</h1></a></nav>
@@ -399,6 +575,30 @@
     }
 
     document.getElementById('copyBtnEn').addEventListener('click', () => copyPrompt('statusEn'));
+    </script>
+
+    <script>
+    function toggleDropdown(btn) {
+        const li = btn.closest('.nav-dropdown');
+        const isOpen = li.classList.contains('open');
+        // close all
+        document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) li.classList.add('open');
+    }
+
+    function toggleMobileMenu() {
+        document.getElementById('nav-mobile-menu').classList.toggle('open');
+    }
+
+    // Close dropdown on outside click
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#topnav')) {
+            document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        }
+        if (!e.target.closest('#topnav') && !e.target.closest('#nav-mobile-menu')) {
+            document.getElementById('nav-mobile-menu').classList.remove('open');
+        }
+    });
     </script>
 </body>
 </html>
