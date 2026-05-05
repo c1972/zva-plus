@@ -143,6 +143,62 @@
         li {
             margin-bottom: 12px;
         }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 14px 0;
+            font-weight: bold;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            color: #007bff;
+            font-size: 1.3rem;
+            font-weight: 300;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+
+        .faq-item summary:hover {
+            color: #007bff;
+        }
+
+        .faq-answer {
+            padding-bottom: 14px;
+            color: #aaaaaa;
+            font-size: 0.95rem;
+        }
+
+        .faq-answer p {
+            margin: 0 0 8px 0;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -163,17 +219,61 @@
         <div class="medium">Lies meinen <a href="https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d" target="_blank">Artikel zum Thema Prompt-Engineering</a>, am Beispiel dieses Projekts hier, auf medium.com.</div>
 
         <div class="card">
-			
             <h2>Anleitung</h2>
             <ol>
                 <li>Button klicken, um den Prompt zu kopieren.</li>
                 <li>Öffne <a href="https://claude.ai/" target="_blank">Claude</a>, <a href="https://gemini.google.com/" target="_blank">Gemini</a> oder <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>. Benutze wenn möglich ein Abo-Modell, bestenfalls Claude.</li>
                 <li>Den kopierten Code per <strong>STRG + V</strong> einfügen und absenden.</li>
-                <li>Folge den Anweisungen der KI (ca. 10-20 Runden), bis Du den <strong>Abschluss-Code</strong> erhältst.</li>
-                <li>Das System wertet argumentative Tiefe aus, nicht Schnelligkeit. Plane mindestens 15 Minuten ein.</li>
-                <li>Bedenke die Beschränkungen und Unterschiede der LLM-Modelle: Claude wird dich intellektuell mehr fordern als Gemini, ChatGPT benötigt tendenziell mehr Runden.</li>
-				<li>Beachte, dass ein Prompt gfs. <strong>NICHT</strong> ausgeführt wird, wenn Du ihn als Datei-Upload bereit stellst. ZB. Claude wird sich dann weigern. (Nutze statt dessen schlicht STRG+V.)</li>
+                <li>Folge den Anweisungen der KI, bis Du den <strong>Abschluss-Code</strong> erhältst.</li>
+                <li>Beachte, dass ein Prompt ggf. <strong>NICHT</strong> ausgeführt wird, wenn Du ihn als Datei-Upload bereitstellst. Z.B. Claude wird sich dann weigern. (Nutze statt dessen schlicht STRG+V.)</li>
             </ol>
+        </div>
+
+        <div class="card">
+            <h2>Häufige Fragen</h2>
+
+            <details class="faq-item">
+                <summary>Worum geht es in diesem Test?</summary>
+                <div class="faq-answer">
+                    <p>Das System führt einen strukturierten Dialog mit dir und analysiert dabei, wie du argumentierst, Entscheidungen triffst und auf Widersprüche reagierst. Ausgewertet werden kognitive Marker wie Argumentationskonsistenz, Denkstil und Stressresistenz – nicht Faktenwissen oder Schnelligkeit.</p>
+                    <p>Am Ende erhältst du ein persönliches Profil mit Hinweisen darauf, welche Berufsprofile zu deinem Denkstil passen.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Wie lange dauert der Test?</summary>
+                <div class="faq-answer">
+                    <p>Plane mindestens 15 Minuten ein. Die Dauer hängt nicht von einer festen Zeit ab, sondern davon, wann das System ausreichend Daten gesammelt hat – in der Regel nach 10 bis 20 Gesprächsrunden.</p>
+                    <p>Je substanzieller deine Antworten ausfallen, desto früher wird die nötige Datendichte erreicht.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Welches KI-Modell sollte ich nutzen?</summary>
+                <div class="faq-answer">
+                    <p>Empfohlen werden Claude, Gemini und ChatGPT. Die Ergebnisse unterscheiden sich je nach Modell:</p>
+                    <p><strong>Claude</strong> liefert die präzisesten Analysen und fordert intellektuell am stärksten – Abo-Version empfohlen, da die Gratis-Version stark limitiert ist.<br>
+                    <strong>Gemini</strong> (kostenlos) ist eine gute Alternative mit solider Qualität.<br>
+                    <strong>ChatGPT</strong> funktioniert ohne Anmeldung, benötigt aber tendenziell mehr Runden für ein vollständiges Ergebnis.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Was hat es mit dem Abschluss-Code auf sich?</summary>
+                <div class="faq-answer">
+                    <p>Am Ende des Tests generiert die KI einen 21-stelligen Code. Dieser Code enthält anonymisierte technische Metadaten: das verwendete Modell, die erreichte Analysedichte, den Zeitstempel und das Herkunftsland.</p>
+                    <p>Der Code enthält keinen Personenbezug und dient ausschließlich der Qualitätssicherung. Du kannst ihn zusammen mit deinem Feedback über das Formular auf dieser Seite einreichen.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Welche Daten werden erhoben?</summary>
+                <div class="faq-answer">
+                    <p>Zur Qualitätssicherung wird das Herkunftsland via IP ermittelt und im Abschluss-Code kodiert. Weitere Daten werden von dieser Website nicht gespeichert.</p>
+                    <p>Der Dialog selbst findet ausschließlich in deinem Browser mit dem von dir gewählten KI-Dienst statt. Was du dort eingibst, unterliegt den Datenschutzbedingungen des jeweiligen Anbieters (Claude, Gemini, ChatGPT) – nicht dieser Seite.</p>
+                </div>
+            </details>
+
         </div>
 
         <div class="card">
@@ -202,12 +302,10 @@
     async function copyPrompt(statusId) {
         const status = document.getElementById(statusId);
         try {
-            // Lädt die prompt.txt aus dem gleichen Ordner auf GitHub
             const response = await fetch('prompt.txt');
             if (!response.ok) throw new Error('prompt.txt nicht gefunden');
             let text = await response.text();
             
-            // Zeitstempel generieren
             const now = new Date();
             const day = String(now.getDate()).padStart(2, '0');
             const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -218,10 +316,8 @@
             
             const dateTimeString = `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
             
-            // Platzhalter im Text ersetzen
             text = text.replace('__DATETIME__', dateTimeString);
             
-            // Kopieren
             await navigator.clipboard.writeText(text);
             status.textContent = 'Status: Prompt erfolgreich kopiert (' + dateTimeString + ')';
             status.style.color = "#28a745";
