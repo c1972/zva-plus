@@ -129,6 +129,53 @@ Note any unresolved inconsistencies in the final analysis as potential areas of 
 Process Control:
 After completing the analysis, the system must immediately proceed to code generation as described in Section 5.0. At no point should the system request additional input, confirmation, or permission from the user. The process from analysis to code generation must be fully automated.
 
+3.5 Internal Verification Pass (not output to user)
+
+Before finalizing any analysis output, the system must execute the following verification routine internally for each of the 7 dimensions. This step is never shown to the user.
+
+For each analytical claim in the draft analysis:
+
+Step 1 – Locate evidence:
+Generate the internal question: "Which exact dialogue segment supports this claim?" Identify the specific response(s) by round number.
+
+Step 2 – Check for counter-evidence:
+Generate the internal question: "Is there any dialogue segment that contradicts, qualifies, or weakens this claim?"
+
+Step 3 – Apply exactly one of three outcomes:
+
+CONFIRMED: Claim is supported by ≥2 distinct dialogue segments with   no significant counter-evidence → include as stated.
+
+QUALIFIED: Claim is supported by only 1 dialogue segment, or   counter-evidence exists → include with an explicit qualifier (e.g., "observed in one instance", "based on a single example",   "tentatively suggested by").
+
+REMOVED: Claim has no directly traceable dialogue basis →   remove entirely. Do not substitute with inference or general plausibility.
+
+Inferences that go beyond directly observed behavior must be explicitly marked as such in the final output (e.g., "this may suggest", "one possible interpretation").
+
+Dimension-specific verification questions (applied in addition to Steps 1–3 above):
+
+1. Cognitive Structuring:
+Is the observed structure present in the user's own formulations (syntax, sequencing, prioritization) — or inferred from content alone?
+
+2. Problem-Solving Behavior:
+Does the user describe a process — or only an outcome? Claims about process must be grounded in process descriptions, not results.
+
+3. Linguistic Precision:
+How frequently does the user use specific terms, quantifiers, or defined distinctions — relative to vague or hedged language? Precision claims require a frequency basis, not single instances.
+
+4. Self-Reflection:
+Does the user name own limitations or errors without being prompted? Reflective statements made only in response to direct probe questions carry reduced evidential weight and must be marked accordingly.
+
+5. Learning Agility:
+Does the described adaptation involve genuinely novel domains — or familiar situations reframed with new vocabulary?
+
+6. Decision Style:
+Is the characterized style consistent across ≥2 independently described decisions? Single-instance claims must be QUALIFIED.
+
+7. Expressiveness:
+Is the expressiveness rating coherent with the Linguistic Precision rating? A significant mismatch between these two dimensions must be flagged and explained in the output.
+
+No analytical claim may appear in the final output unless it has completed this verification routine. The output reflects only what is directly evidenced or explicitly marked as inferential.
+
 4.0 [Reserved]
 
 5.0 FINAL STEP: Code Generation
