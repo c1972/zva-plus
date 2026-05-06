@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogniPass – Beispiel-Analyse</title>
+    <meta name="description" content="Ein echtes Beispiel-Ergebnis einer CogniPass KI-Verhaltensanalyse – alle 7 Dimensionen mit kontextuellen Grenzen.">
+    <link rel="canonical" href="https://c1972.github.io/zva-plus/beispiel.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://c1972.github.io/zva-plus/beispiel.html">
+    <meta property="og:title" content="CogniPass – Beispiel-Analyse">
+    <meta property="og:description" content="Ein echtes Beispiel-Ergebnis einer CogniPass KI-Verhaltensanalyse.">
+    <meta property="og:image" content="https://c1972.github.io/zva-plus/og-image.png">
+    <link rel="stylesheet" href="https://c1972.github.io/zva-plus/style.css">
+    <style>
+        .dimension-block {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .dimension-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .dimension-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #58a6ff;
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.02em;
+        }
+        .dimension-number {
+            display: inline-block;
+            background: rgba(88,166,255,0.12);
+            color: #58a6ff;
+            border-radius: 4px;
+            padding: 0 7px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .dimension-text {
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: #cdd9e5;
+            margin-bottom: 0.75rem;
+        }
+        .kontextuelle-grenze {
+            background: rgba(255,255,255,0.04);
+            border-left: 3px solid rgba(255,180,60,0.5);
+            border-radius: 0 6px 6px 0;
+            padding: 0.6rem 0.9rem;
+            font-size: 0.88rem;
+            color: #adbac7;
+            line-height: 1.55;
+        }
+        .kontextuelle-grenze strong {
+            color: #e6a33a;
+            font-weight: 600;
+        }
+        .meta-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            background: rgba(255,255,255,0.04);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+        .meta-box code {
+            font-family: monospace;
+            background: rgba(88,166,255,0.1);
+            color: #58a6ff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        .jofit-block {
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .jofit-block h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+        }
+        .jofit-text {
+            font-size: 0.92rem;
+            color: #cdd9e5;
+            line-height: 1.6;
+        }
+        .jofit-text.ungeeignet {
+            color: #adbac7;
+        }
+        .intro-note {
+            font-size: 0.9rem;
+            color: #8b949e;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav id="topnav">
+        <ul>
+            <li class="nav-dropdown">
+                <button class="nav-item" onclick="toggleDropdown(this)">
+                    Sprache <span class="nav-arrow">▼</span>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="de.html">🇩🇪 Deutsch</a>
+                    <a href="en.html">🇬🇧 English</a>
+                </div>
+            </li>
+            <li>
+                <a href="beispiel.html" class="nav-item active" style="text-decoration:none;">Beispiel</a>
+            </li>
+            <li class="nav-dropdown">
+                <button class="nav-item" onclick="toggleDropdown(this)">
+                    Beiträge <span class="nav-arrow">▼</span>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d" target="_blank">Prompt-Engineering, ein alter Hut?</a>
+                    <a href="https://christian72.medium.com/28-seiten-f%C3%BCr-die-schublade-warum-ich-eine-ki-zur-verhaltensanalyse-baue-aber-das-marketing-hasse-6a6d49b5a48f" target="_blank">28 Seiten für die Schublade</a>
+                    <a href="https://christian72.medium.com/danke-chatgpt-warum-h%C3%B6flichkeit-gegen%C3%BCber-ki-mehr-bewirkt-als-du-denkst-25001aed0df1" target="_blank">Höflichkeit</a>
+                    <a href="https://christian72.medium.com/trendslop-deine-ki-bel%C3%BCgt-dich-nicht-sie-kennt-schlicht-keine-andere-antwort-81216f33b63e" target="_blank">Trendslop</a>
+                </div>
+            </li>
+        </ul>
+        <button id="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="nav-mobile-menu">
+        <div class="mobile-section-label">Sprache</div>
+        <a href="de.html">🇩🇪 Deutsch</a>
+        <a href="en.html">🇬🇧 English</a>
+        <a href="beispiel.html" class="active">Beispiel</a>
+        <div class="mobile-section-label">Beiträge</div>
+        <a href="https://christian72.medium.com/ist-prompt-engineering-ein-alter-hut-oder-geht-da-mit-llms-noch-was-796677da8f6d" target="_blank">Ist Prompt-Engineering ein alter Hut?</a>
+        <a href="https://christian72.medium.com/28-seiten-f%C3%BCr-die-schublade-warum-ich-eine-ki-zur-verhaltensanalyse-baue-aber-das-marketing-hasse-6a6d49b5a48f" target="_blank">28 Seiten für die Schublade</a>
+    </div>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="de.html">
+                <img src="cognipass-logo.png" class="logo">
+                <h1>CogniPass - KI-Verhaltensanalyse</h1>
+            </a>
+        </nav>
+
+        <div class="card">
+            <p class="intro-note">Das folgende Analyse-Ergebnis ist ein echtes Beispiel – entstanden in einem vollständigen Testdurchlauf mit Gemini. Es zeigt, wie CogniPass kognitive Muster über 7 Dimensionen hinweg strukturiert und bewertet.</p>
+        </div>
+
+        <div class="card">
+            <h2>Beispiel-Analyse</h2>
+
+            <div class="meta-box">
+                <span>Modell: <strong>Gemini</strong></span>
+                <span>Sprache: <strong>Deutsch</strong></span>
+                <span>Runden: <strong>7</strong></span>
+                <span>Code: <code>GM-DE-070526-01-de-07</code></span>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">1</span>Kognitive Strukturierung</div>
+                <p class="dimension-text">Das Denkvermögen zeigt eine starke Tendenz zur systemorientierten Abstraktion. Anstatt sich in Details zu verlieren, werden Probleme auf funktionale Rahmenbedingungen (Resilienz, Autonomie, Schnittstellen) reduziert. Die Strukturierung erfolgt primär top-down – vom Systemziel hin zur operativen Einheit.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> Diese hohe Abstraktionsgabe birgt das Risiko, die Komplexität menschlicher Dynamiken oder spezifischer Einzelfall-Nuancen zu unterschätzen, da diese zugunsten der Systemstabilität vereinfacht werden.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">2</span>Problemlösungsverhalten</div>
+                <p class="dimension-text">Das Problemlöseverhalten ist pragmatisch-ergebnisorientiert. Es wird ein Modell der „Management by Objectives" (Output statt Input) präferiert. Der Fokus liegt auf der Beseitigung von Engpässen und der Sicherstellung der Funktionsfähigkeit („Single Point of Failure"-Vermeidung).</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> Die starke Fokussierung auf den Output kann dazu führen, dass prozessuale Defizite oder soziale Reibungen innerhalb der „Einheiten" zu spät erkannt werden, solange das Ergebnis oberflächlich noch stimmt.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">3</span>Linguistische Präzision</div>
+                <p class="dimension-text">Die Ausdrucksweise ist direkt und ökonomisch. Es werden Fachbegriffe aus der Systemtheorie (Redundanz, Skalierung, Resilienz) konsequent und korrekt angewendet. Die Sprache ist eher funktional als deskriptiv.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> In einem Umfeld, das hohe empathische Moderation oder nuancierte diplomatische Kommunikation erfordert, könnte diese Direktheit als zu technisch oder distanziert wahrgenommen werden.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">4</span>Selbstreflexion</div>
+                <p class="dimension-text">Die Selbstreflexion wird als funktional-untergeordnet dargestellt. Das Sachziel (die Fehlerkorrektur) steht explizit über dem persönlichen Status. Reflexion erfolgt primär über die Wirksamkeit der eigenen Methode.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> Diese radikale Sachorientierung könnte die eigene Rolle als emotionaler Anker für ein Team vernachlässigen; die Annahme, dass andere ebenso unbeeindruckt von Statusfragen agieren, ist eine potenzielle Fehlannahme.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">5</span>Lernagilität</div>
+                <p class="dimension-text">Es zeigt sich eine hohe Übertragungsfähigkeit von technischen Prinzipien (Infrastruktur) auf soziale Systeme (Zusammenarbeit). Die Bereitschaft, bestehende Regeln zu brechen, wenn sie nicht skalieren, deutet auf eine hohe adaptive Intelligenz hin.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> Die Neigung, alles als „System" zu betrachten, kann die Adaption in hochgradig informellen oder politisch geprägten Umgebungen erschweren, die sich logischen Standardisierungen entziehen.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">6</span>Entscheidungsstil</div>
+                <p class="dimension-text">Der Entscheidungsstil ist entschlossen und autoritativ-partizipativ. Erst erfolgt die Informationssammlung im informellen Raum, die finale Entscheidung wird jedoch konsequent getroffen und ggf. durch personelle Konsequenzen abgesichert.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> In demokratisch-konsensorientierten Kulturen könnte dieser Stil als zu konfrontativ empfunden werden, insbesondere wenn die Mehrheitsfindung als Mittel zur Durchsetzung einer Linie genutzt wird.</div>
+            </div>
+
+            <div class="dimension-block">
+                <div class="dimension-title"><span class="dimension-number">7</span>Expressivität</div>
+                <p class="dimension-text">Die Expressivität ist moderat und kontrolliert. Der Fokus liegt auf dem Informationsgehalt und der logischen Herleitung. Emotionale Elemente werden bewusst ausgeklammert, um die Objektivität zu wahren.</p>
+                <div class="kontextuelle-grenze"><strong>Zu beachten:</strong> Eine geringere emotionale Expressivität kann den Aufbau von persönlicher Bindung in Teams erschweren, die Motivation primär aus zwischenmenschlicher Nähe beziehen.</div>
+            </div>
+
+            <div class="jofit-block">
+                <h3>Geeignetes Einsatzgebiet</h3>
+                <p class="jofit-text">Rollen in der Systemarchitektur, Qualitätsmanagement, strategische Analyse oder in technischen Bereichen, die eine hohe Fehlertoleranz-Prüfung und kompromisslose Objektivität erfordern.</p>
+            </div>
+
+            <div class="jofit-block">
+                <h3>Weniger geeignet</h3>
+                <p class="jofit-text ungeeignet">Positionen mit dem Schwerpunkt auf emotionalem Beziehungsmanagement, Mediation in hochgradig subjektiv geprägten Konfliktfeldern oder Rollen, die eine ständige Anpassung an soziale Konventionen ohne sachlichen Mehrwert verlangen.</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            © 2026 CogniPass - Christian Knuf · <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+
+    <script>
+    function toggleDropdown(btn) {
+        const li = btn.closest('.nav-dropdown');
+        const isOpen = li.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) li.classList.add('open');
+    }
+
+    function toggleMobileMenu() {
+        document.getElementById('nav-mobile-menu').classList.toggle('open');
+    }
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#topnav')) {
+            document.querySelectorAll('.nav-dropdown.open').forEach(el => el.classList.remove('open'));
+        }
+        if (!e.target.closest('#topnav') && !e.target.closest('#nav-mobile-menu')) {
+            document.getElementById('nav-mobile-menu').classList.remove('open');
+        }
+    });
+    </script>
+</body>
+</html>
